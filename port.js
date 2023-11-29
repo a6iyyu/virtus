@@ -17,6 +17,18 @@ app.get("/", async (request, response) => {
   response.render("homepage");
 });
 
+app.get("/about", async (request, response) => {
+  response.render("about");
+});
+
+app.get("/careers", async (request, response) => {
+  response.render("careers");
+});
+
+app.use("/", async (request, response) => {
+  response.status(404).render("404");
+});
+
 app.listen(port, () => {
   console.log(`Server is running in http://localhost:${port}`);
 });

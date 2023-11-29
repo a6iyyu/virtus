@@ -44,6 +44,7 @@
     "passport-oauth2": "^1.7.0",
     "pg": "^8.11.3",
     "postcss": "^8.4.31",
+    "prisma": "^5.6.0",
     "recaptcha-express": "^1.0.2",
     "request": "^2.88.2",
     "sequelize": "^6.35.1",
