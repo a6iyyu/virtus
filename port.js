@@ -9,8 +9,7 @@ const port = 8000;
 
 app.set("view engine", "ejs");
 app.use(logger("dev"));
-app.use(express.static(path.join(__dirname, "static", "css")));
-app.use(express.static(path.join(__dirname, "static", "js")));
+app.use(express.static(path.join(__dirname, "static")));
 app.use(db);
 
 app.get("/", async (request, response) => {
