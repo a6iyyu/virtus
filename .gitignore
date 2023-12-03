@@ -1,6 +1,5 @@
 # Ignoring modules
 node_modules/
-css/
 
 # Ignoring files
 .env
