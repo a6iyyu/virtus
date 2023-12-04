@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon port"
+    "start": "nodemon port",
+    "build:css": "tailwindcss build -o ./static/css/styles.css"
   },
   "keywords": [],
   "author": "Rafi Abiyyu Airlangga",

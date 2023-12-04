@@ -14,16 +14,47 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
-    <div class="header bg-faeed1 h-9-5 w-full grid place-items-center">
-      <div class="navbar h-full w-95 flex">
-        <div class="img h-full w-1/4 grid place-items-center">
-          <img width="300" src="img/logo.png" alt="">
+  <body class="h-150 bg-d9d9d9">
+    <div class="bg-faeed1 h-9-5 w-full grid-center">
+      <div class="h-full w-95 flex">
+        <div class="h-full w-1/4 grid-center">
+          <a href="/">
+            <img width="300" src="img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="h-full w-3/4 flex-center-end">
+          <div class="h-full w-45 grid-center">
+            <input
+              type="search"
+              name=""
+              id=""
+              class="bg-d9d9d9 h-3/10 w-90 rounded-50px f-w-600 p-rl-20px"
+              placeholder="Search"
+            />
+          </div>
+          <div class="h-full w-7-5-p grid-center">
+            <a href="/profile">
+              <img src="img/avatar.png" alt="" width="50" />
+            </a>
+          </div>
+          <div class="h-full w-7-5-p grid-center z-10">
+            <abbr title="Menu" class="grid-center">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="h-30-px w-30-px absolute z-20 cursor-pointer opacity-0"
+              />
+              <span class="hamburger-menu cursor-pointer"></span>
+              <span class="hamburger-menu cursor-pointer"></span>
+              <span class="hamburger-menu cursor-pointer"></span>
+            </abbr>
+          </div>
         </div>
       </div>
     </div>
-    <div class="welcome-parent bg-faeed1 h-80 w-full grid place-items-center rounded-b-3xl">
-
+    <div class="bg-faeed1 w-full h-30-r rounded-b-100px grid-center">
+      <div class="w-95 h-full flex"></div>
     </div>
     <script src="js/homepage.js"></script>
   </body>
