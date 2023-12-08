@@ -15,9 +15,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-d9d9d9 h-150 w-full">
-    <div class="navbar bg-faeed1 h-9-5 w-full grid-center">
-      <div class="h-full w-95 flex">
+  <body class="bg-d9d9d9 h-150-r w-full">
+    <div class="navbar bg-faeed1 h-9-5-r w-full grid-center">
+      <div class="h-full w-95-p flex">
         <div class="h-full w-1/4 grid-center">
           <a href="/" class="logo">
             <img src="img/logo.png" alt="" width="225" />
@@ -27,16 +27,18 @@
           </a>
         </div>
         <div class="h-full w-3/4 flex-center-end">
-          <div class="search h-full w-45 grid-center">
+          <div class="search h-full w-45-p grid-center">
             <input
               type="search"
               name=""
               id=""
-              class="search-box h-3/10 w-90 rounded-50px p-rl-20px text-sm"
+              class="search-box h-3/10 w-90-p rounded-50px p-rl-20-px text-sm"
               placeholder="Search"
             />
-            <div class="search-icon grid-center h-70-px w-70-px bg-d9d9d9 rounded-50px cursor-pointer">
-              <img src="img/search.png" alt="" width="35">
+            <div
+              class="search-icon grid-center h-70-px w-70-px bg-d9d9d9 rounded-50px cursor-pointer"
+            >
+              <img src="img/search.png" alt="" width="35" />
             </div>
           </div>
           <div class="avatar h-full w-7-5-p grid-center">
@@ -61,8 +63,34 @@
         <div class="overlay"></div>
       </div>
     </div>
-    <div class="welcome-parent bg-faeed1 w-full h-30-r rounded-b-100px grid-center">
-      <div class="w-95 h-full flex"></div>
+    <div
+      class="tagline-parent bg-faeed1 w-full h-35-r rounded-b-100px grid-center"
+    >
+      <div class="w-95-p h-full flex">
+        <div class="tagline-parent h-9/10 w-60-p flex-center-center">
+          <div class="tagline-head h-3/5 w-17/20">
+            <p class="text-4xl font-bold">
+              Virtus - Bringing the World's <br />
+              Art Masterpieces to You.
+            </p>
+            <br />
+            <p class="text-2xl font-normal">
+              A Home for Art Connoisseurs to Discover <br />
+              the Beauty of the Infinite
+            </p>
+            <br /><br /><br />
+            <a
+              href=""
+              class="find-more bg-d9d9d9 font-semibold text-1xl p-ud-20-px-rl-40-px rounded-50px"
+            >
+              FIND MORE
+            </a>
+          </div>
+        </div>
+        <div class="tagline-vector h-9/10 w-40-p grid-center">
+          <img src="img/artist.png" alt="" width="350" />
+        </div>
+      </div>
     </div>
     <script src="js/homepage.js"></script>
   </body>
