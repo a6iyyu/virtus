@@ -1,15 +1,15 @@
-const express = require("express");
-const logger = require("morgan");
-const path = require("path");
-const db = require("./db/users.js");
-require("./auth/google-oauth20.js");
+import express from "express";
+import logger from "morgan";
+import path from "path";
+import db from "./db/users.js";
+import "./auth/google-oauth20.js";
 
 const app = express();
 const port = 8000;
 
 app.set("view engine", "ejs");
 app.use(logger("dev"));
-app.use(express.static(path.join(__dirname, "static")));
+app.use(express.static(path.join("static")));
 app.use(db);
 
 app.get("/", async (request, response) => {
