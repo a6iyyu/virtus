@@ -38,6 +38,7 @@
     "hbs": "^4.2.0",
     "jquery": "^3.7.1",
     "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "mysql2": "^3.6.5",
@@ -57,6 +58,7 @@
     "request": "^2.88.2",
     "sequelize": "^6.35.1",
     "sqlite3": "^5.1.6",
+    "swiper": "^11.0.5",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.3.2"
   }
