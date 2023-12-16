@@ -24,6 +24,10 @@ app.get("/careers", async (request, response) => {
   response.render("careers");
 });
 
+app.get("/community", async (request, response) => {
+  response.render("community");
+});
+
 app.use("/", async (request, response) => {
   response.status(404).render("404");
 });

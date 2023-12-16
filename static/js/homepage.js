@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const splide__2 = new Splide(".splide__2", {
+  const splide__2 = new Splide(".splide__2", { 
+    autoplay: true,
     drag: "free",
     perPage: 3,
     snap: true,
@@ -20,13 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const splide__3 = new Splide(".splide__3", {
+  new Splide(".splide__3", {
     drag: "free",
     perPage: 3,
     snap: true,
     type: "loop",
-  });
-  splide__3.mount();
+    autoScroll: {
+      speed: 2,
+    },
+  }).mount(window.splide.Extensions);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -46,9 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
     drag: "free",
     gap: "1rem",
     heightRatio: 0.3,
+    mute: true,
     updateOnMove: true,
-    perPage: 1,
-    wheel: true,
+    pagination: true,
+    perPage: 2,
+    type: "loop",
     width: "90%",
     video: {
       loop: true,
@@ -57,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const FindMore = document.querySelector(".find-more");
-const FinishToScroll = document.querySelector(".filtered-menu");
+const FinishToScroll = document.querySelector(".finish-to-scroll");
 FindMore.addEventListener("click", () => {
   FinishToScroll.scrollIntoView({
     behavior: "smooth",
