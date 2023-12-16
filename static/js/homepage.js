@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const splide__2 = new Splide(".splide__2", { 
     autoplay: true,
     drag: "free",
+    pagination: false,
     perPage: 3,
     snap: true,
     type: "loop",
