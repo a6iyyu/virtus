@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }).mount(window.splide.Extensions);
 });
 
-const FindMore = document.querySelector(".find-more");
-const FinishToScroll = document.querySelector(".finish-to-scroll");
-FindMore.addEventListener("click", () => {
-  FinishToScroll.scrollIntoView({
+const findMore = document.querySelector(".find-more");
+const finishToScroll = document.querySelector(".finish-to-scroll");
+findMore.addEventListener("click", () => {
+  finishToScroll.scrollIntoView({
     behavior: "smooth",
   });
 });
