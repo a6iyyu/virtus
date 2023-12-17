@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     focus: 0,
     omitEnd: true,
     perPage: 5,
-    type: "slide",
+    type: "loop",
   });
   splide__1.mount();
 });
