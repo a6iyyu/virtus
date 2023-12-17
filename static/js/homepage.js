@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const splide__2 = new Splide(".splide__2", { 
+  const splide__2 = new Splide(".splide__2", {
     autoplay: true,
     drag: "free",
     pagination: false,

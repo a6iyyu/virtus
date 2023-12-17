@@ -1,6 +1,6 @@
-const HamburgerCheckbox = document.getElementById("hamburger-menu");
+const Hamburger = document.getElementById("hamburger-menu");
 const Overlay = document.querySelector(".overlay");
-HamburgerCheckbox.addEventListener("change", function () {
+Hamburger.addEventListener("change", function () {
   if (this.checked) {
     Overlay.style.display = "grid";
     Overlay.style.placeItems = "center";
