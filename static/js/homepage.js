@@ -1,3 +1,20 @@
+const findMore = document.querySelector(".find-more");
+const finishToScroll = document.querySelector(".finish-to-scroll");
+
+window.addEventListener("load", function () {
+  const preloader = this.document.querySelector(".preloader");
+  preloader.classList.add("done");
+  this.setTimeout(function () {
+    preloader.style.display = "none";
+  }, 1000);
+});
+
+findMore.addEventListener("click", () => {
+  finishToScroll.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const splide__1 = new Splide(".splide__1", {
     arrows: false,
@@ -60,12 +77,4 @@ document.addEventListener("DOMContentLoaded", function () {
       loop: true,
     },
   }).mount(window.splide.Extensions);
-});
-
-const findMore = document.querySelector(".find-more");
-const finishToScroll = document.querySelector(".finish-to-scroll");
-findMore.addEventListener("click", () => {
-  finishToScroll.scrollIntoView({
-    behavior: "smooth",
-  });
 });

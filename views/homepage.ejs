@@ -30,6 +30,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <div class="preloader bg-242424 fixed inset-0 h-screen w-full grid-center">
+      <div class="loader absolute grid-center"></div>
+    </div>
     <div class="navbar h-9-5-r w-full grid-center">
       <div class="h-full w-95-p flex">
         <div class="h-full w-1/4 grid-center">
@@ -75,7 +78,7 @@
             </abbr>
           </div>
         </div>
-        <div class="overlay"></div>
+        <div class="overlay bg-242424 fixed h-full w-1/2 inset-0 z-30"></div>
       </div>
     </div>
     <div class="tagline w-full h-35-r rounded-b-100px grid-center">
@@ -211,6 +214,7 @@
     </div>
     <div class="h-28 w-full grid-center">
       <a
+        href="/explore"
         class="more-result bg-bbab8c font-semibold text-1xl text-white rounded-50px cursor-pointer"
       >
         MORE RESULT
