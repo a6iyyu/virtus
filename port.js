@@ -1,15 +1,17 @@
-import express from "express";
-import logger from "morgan";
-import path from "path";
-import db from "./db/users.js";
-import "./auth/google-oauth20.js";
+const express = require("express");
+const logger = require("morgan");
+const path = require("path");
+const auth = require("./auth/auth.js");
+const db = require("./db/users.js");
+require("./auth/googlestrategy.js");
 
 const app = express();
 const port = 8000;
 
 app.set("view engine", "ejs");
 app.use(logger("dev"));
-app.use(express.static(path.join("static")));
+app.use(express.static(path.join(__dirname, "static")));
+app.use(auth);
 app.use(db);
 
 app.get("/", async (request, response) => {
@@ -50,10 +52,6 @@ app.get("/help-center", async (request, response) => {
 
 app.get("/limited-editions", async (request, response) => {
   response.render("limited-editions");
-});
-
-app.get("/profile", async (request, response) => {
-  response.render("profile");
 });
 
 app.get("/saved", async (request, response) => {

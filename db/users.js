@@ -1,7 +1,6 @@
-import express from "express";
-import { createPool } from "mysql";
-import dotenv from "dotenv";
-dotenv.config();
+const express = require("express");
+const { createPool } = require("mysql");
+require("dotenv").config();
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -21,4 +20,4 @@ Pool.query(`SELECT * FROM USERS`, (err) => {
   return console.log("Connection to the user database was successful!");
 });
 
-export default app;
+module.exports = app;

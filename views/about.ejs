@@ -12,11 +12,12 @@
     <link rel="icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/component.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="navbar h-9-5-r w-full grid-center">
-      <div class="h-full w-95-p flex">
+      <div class="h-full w-19/20 flex">
         <div class="h-full w-1/4 grid-center">
           <a href="/" class="logo">
             <img src="img/logo-black.png" alt="Virtus Logo" width="225" />
@@ -31,7 +32,7 @@
               type="search"
               name=""
               id=""
-              class="search-box w-90-p rounded-50px text-sm"
+              class="search-box w-9/10 rounded-50px text-sm"
               placeholder="Search"
               style="padding: 0 20px"
             />
@@ -41,12 +42,12 @@
               <img src="img/search.png" alt="" width="35" id="search-icon" />
             </div>
           </div>
-          <div class="avatar h-full w-7-5-p grid-center">
+          <div class="avatar h-full w-3/40 grid-center">
             <a href="/profile">
               <img src="img/avatar.png" alt="" width="50" />
             </a>
           </div>
-          <div class="hamburger-menu-parent z-10 h-full w-7-5-p grid-center">
+          <div class="hamburger-menu-parent z-10 h-full w-3/40 grid-center">
             <abbr title="Menu">
               <input
                 type="checkbox"
@@ -63,37 +64,82 @@
         <div class="overlay fixed h-full w-1/2 inset-0 z-30"></div>
       </div>
     </div>
-  </body>
-  <div class="welcome w-full grid-center">
-    <div class="w-90-p h-full flex-center-center">
-      <div class="welcome-parent h-9/10 w-1/2 flex-center-center">
-        <div class="welcome-head h-3/4">
-          <p class="text-4xl cursor-default font-semibold">
-            Welcome to Virtus!
+    <div class="welcome w-full grid-center">
+      <div class="w-19/20 h-full flex-center-center" data-aos="fade-up">
+        <div class="w-1/2 flex-center-end">
+          <div>
+            <p class="text-4xl cursor-default font-semibold">
+              Welcome to Virtus!
+            </p>
+            <br />
+            <p class="text-1xl cursor-default font-medium text-justify">
+              Welcome to Virtus, a place where the beauty of art meets the
+              convenience of online shopping. We are proud to open the doors of
+              the art world to you. With a rich and diverse collection, we are
+              committed to providing an enjoyable and meaningful art shopping
+              experience. Let's explore the unique works of skilled artists
+              together and find inspiring beauty at every step of your art
+              journey. Thank you for joining Virtus, the place for quality art
+              and a satisfying shopping experience.
+            </p>
+          </div>
+        </div>
+        <div class="welcome-vector w-2/5 flex-center-end" data-aos="fade-up">
+          <img
+            src="img/drawing.jpg"
+            alt=""
+            width="375"
+            style="border-radius: 50px"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="h-12 w-full"></div>
+    <div class="founder-image h-64 w-full grid-center">
+      <img
+        src="img/founder.jpg"
+        alt="Founder"
+        width="250"
+        style="border-radius: 250px"
+      />
+    </div>
+    <div class="h-8 w-full"></div>
+    <div class="founder-description h-80 w-full grid-center" data-aos="fade-up">
+      <div class="h-full w-9/10 flex justify-evenly">
+        <div class="h-full">
+          <p
+            class="text-black text-1xl cursor-default font-medium text-justify"
+          >
+            <strong>Rafi Abiyyu Airlangga</strong>, an Applied Engineering
+            student of Information Science, is the brain behind the birth of
+            Virtus. Starting this journey from his passion to create a
+            supportive environment for artists around the world, he combined his
+            technology education background as a software engineer with his
+            fascination for art, especially photography and anime. With a
+            passion for learning in the service of technology, he built Virtus
+            single-handedly to provide an innovative platform that connects art
+            and technology.
           </p>
-          <br />
-          <p class="text-1xl cursor-default font-medium text-justify">
-            Welcome to Virtus, a place where the beauty of art meets the
-            convenience of online shopping. We are proud to open the doors of
-            the art world to you. With a rich and diverse collection, we are
-            committed to providing an enjoyable and meaningful art shopping
-            experience. Let's explore the unique works of skilled artists
-            together and find inspiring beauty at every step of your art
-            journey. Thank you for joining Virtus, the place for quality art and
-            a satisfying shopping experience.
+        </div>
+        <div class="h-full">
+          <p
+            class="text-black text-1xl cursor-default font-medium text-justify"
+          >
+            <strong>Virtus' vision</strong> is to be an innovative bridge
+            between art and technology, to be a home for artists, and to
+            encourage the exchange of creative ideas around the world. Virtus is
+            committed to creating an environment that supports, houses fresh
+            ideas, and stimulates the exchange of creative ideas on a global
+            level. With unique features such as chat, open-source, and limited
+            editions, Virtus aims to provide a more personalized and meaningful
+            art shopping experience, advance artistic expression, and form a
+            vibrant community.
           </p>
         </div>
       </div>
-      <div class="welcome-vector h-9/10 grid-center" style="width: 45%">
-        <img
-          src="img/drawing.jpg"
-          alt=""
-          width="400"
-          style="border-radius: 50px"
-        />
-      </div>
     </div>
-  </div>
+    <div class="h-8 w-full"></div>
+  </body>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     class="inset-0"
@@ -106,7 +152,7 @@
     ></path>
   </svg>
   <footer class="h-96 w-full grid-center">
-    <div class="footer-parent h-full w-90-p flex-center-center">
+    <div class="footer-parent h-full w-9/10 flex-center-center">
       <div class="footer-description h-full w-2/5 block">
         <img src="img/logo-white.png" alt="Virtus Logo" width="225" />
         <p class="text-white text-1xl cursor-default font-semibold">
@@ -236,4 +282,11 @@
     </div>
   </footer>
   <script type="text/javascript" src="js/hamburger-menu.js"></script>
+  <script
+    type="text/javascript"
+    src="https://unpkg.com/aos@next/dist/aos.js"
+  ></script>
+  <script type="text/javascript">
+    AOS.init();
+  </script>
 </html>
