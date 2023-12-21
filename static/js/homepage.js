@@ -1,11 +1,12 @@
 const findMore = document.querySelector(".find-more");
 const finishToScroll = document.querySelector(".finish-to-scroll");
+const preloader = document.querySelector(".preloader");
 
 window.addEventListener("load", function () {
-  const preloader = this.document.querySelector(".preloader");
   preloader.classList.add("done");
-  this.setTimeout(function () {
+  setTimeout(function () {
     preloader.style.display = "none";
+    document.body.style.overflow = "auto";
   }, 1000);
 });
 

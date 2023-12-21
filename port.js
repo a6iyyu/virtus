@@ -18,7 +18,7 @@ app.get("/", async (request, response) => {
   response.render("homepage");
 });
 
-app.get("/about", async (request, response) => {
+app.get("/about-us", async (request, response) => {
   response.render("about");
 });
 
