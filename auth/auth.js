@@ -25,20 +25,6 @@ app.use(
   passport.session()
 );
 
-async function ValidateReCaptcha(ReCaptchaResponse) {
-  const VerifyReCaptcha = await axios.post(
-    "https://www.google.com/recaptcha/api/siteverify",
-    null,
-    {
-      params: {
-        secret: process.env.RECAPTCHA_SECRET,
-        response: ReCaptchaResponse,
-      },
-    }
-  );
-  return VerifyReCaptcha.data.success;
-}
-
 app.get("/login", (request, response) => {
   response.render("login");
 });
@@ -66,19 +52,11 @@ app.get("/profile", (request, response) => {
   response.render("profile");
   if (request.cookies) {
     const token = request.cookies.token;
-    jwt.verify(token, process.env.JWT_SECRET, async (error, decoded) => {
+    jwt.verify(token, process.env.JWT_SECRET, async (error) => {
       if (error) {
         response.redirect("/login");
         return;
       }
-      const user = await prisma.user.findUnique({
-        where: {
-          id: decoded.id,
-        },
-      });
-      response.render("profile.ejs", {
-        user: user,
-      });
     });
   }
 });
@@ -112,7 +90,7 @@ app.post("/login", async (request, response) => {
       algorithm: "HS256",
     }
   );
-  response.cookie("token", token, {
+  response.cookie(token, {
     expires: new Date(Date.now() + 3600000),
     secure: false,
     httpOnly: true,
@@ -123,19 +101,8 @@ app.post("/login", async (request, response) => {
 });
 
 app.post("/register", async (request, response) => {
-  const {
-    name,
-    email,
-    password,
-    "g-recaptcha-response": ReCaptchaResponse,
-  } = request.body;
+  const { name, email, password } = request.body;
   console.log(request.body);
-  const IsValidReCaptcha = await ValidateReCaptcha(ReCaptchaResponse);
-  if (!IsValidReCaptcha) {
-    return response.status(400).json({
-      error: "reCAPTCHA validation failed",
-    });
-  }
   if (!password) {
     console.log("Error: Password is required!");
     response.status(400).json({
