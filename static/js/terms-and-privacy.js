@@ -10,6 +10,8 @@ const thirdPartyList = document.querySelector(".third-party-list");
 const thirdPartyParagraph = document.querySelector(".third-party-paragraph");
 const dataList = document.querySelector(".data-list");
 const dataParagraph = document.querySelector(".data-paragraph");
+const applicableList = document.querySelector(".applicable-list");
+const applicableParagraph = document.querySelector(".applicable-paragraph");
 
 introList.addEventListener("click", () => {
   introParagraph.scrollIntoView({
@@ -43,6 +45,12 @@ thirdPartyList.addEventListener("click", () => {
 
 dataList.addEventListener("click", () => {
   dataParagraph.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+applicableList.addEventListener("click", () => {
+  applicableParagraph.scrollIntoView({
     behavior: "smooth",
   });
 });
