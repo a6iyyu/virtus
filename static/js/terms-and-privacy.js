@@ -12,6 +12,20 @@ const dataList = document.querySelector(".data-list");
 const dataParagraph = document.querySelector(".data-paragraph");
 const applicableList = document.querySelector(".applicable-list");
 const applicableParagraph = document.querySelector(".applicable-paragraph");
+const accessList = document.querySelector(".access-list");
+const accessParagraph = document.querySelector(".access-paragraph");
+const policyList = document.querySelector(".policy-list");
+const policyParagraph = document.querySelector(".policy-paragraph");
+const companyList = document.querySelector(".company-list");
+const companyParagraph = document.querySelector(".company-paragraph");
+const complianceList = document.querySelector(".compliance-list");
+const complianceParagraph = document.querySelector(".compliance-paragraph");
+const childrenList = document.querySelector(".children-list");
+const childrenParagraph = document.querySelector(".children-paragraph");
+const artworkList = document.querySelector(".artwork-list");
+const artworkParagraph = document.querySelector(".artwork-paragraph");
+const useList = document.querySelector(".use-list");
+const useParagraph = document.querySelector(".use-paragraph");
 
 introList.addEventListener("click", () => {
   introParagraph.scrollIntoView({
@@ -51,6 +65,48 @@ dataList.addEventListener("click", () => {
 
 applicableList.addEventListener("click", () => {
   applicableParagraph.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+accessList.addEventListener("click", () => {
+  accessParagraph.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+policyList.addEventListener("click", () => {
+  policyParagraph.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+companyList.addEventListener("click", () => {
+  companyParagraph.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+complianceList.addEventListener("click", () => {
+  complianceParagraph.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+childrenList.addEventListener("click", () => {
+  childrenParagraph.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+artworkList.addEventListener("click", () => {
+  artworkParagraph.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+useList.addEventListener("click", () => {
+  useParagraph.scrollIntoView({
     behavior: "smooth",
   });
 });
