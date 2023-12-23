@@ -26,8 +26,8 @@ app.get("/analytics", async (request, response) => {
   response.render("analytics");
 });
 
-app.get("/blog", async (request, response) => {
-  response.render("blog");
+app.get("/blog", (request, response) => {
+  response.sendFile(path.join(__dirname, "views", "blog.html"));
 });
 
 app.get("/careers", async (request, response) => {
@@ -40,10 +40,6 @@ app.get("/community", async (request, response) => {
 
 app.get("/explore", async (request, response) => {
   response.render("explore");
-});
-
-app.get("/faq", async (request, response) => {
-  response.render("faq");
 });
 
 app.get("/help-center", async (request, response) => {
