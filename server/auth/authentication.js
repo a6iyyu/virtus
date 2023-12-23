@@ -1,6 +1,5 @@
 const express = require("express");
 const session = require("express-session");
-const axios = require("axios");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const path = require("path");
@@ -133,7 +132,6 @@ app.post("/register", async (request, response) => {
 });
 
 app.get("/logout", async (request, response) => {
-  response.clearCookie(token);
   request.session.destroy();
   response.redirect("/login");
 });

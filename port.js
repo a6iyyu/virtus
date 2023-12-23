@@ -1,18 +1,22 @@
 const express = require("express");
 const logger = require("morgan");
+const cors = require("cors");
 const path = require("path");
-const auth = require("./auth/auth.js");
-const db = require("./db/users.js");
-require("./auth/googlestrategy.js");
-
 const app = express();
-const port = 8000;
+app.use(require("./server/auth/googlestrategy.js"));
+app.use(require("./server/auth/authentication.js"));
+app.use(require("./server/db/db.js"));
+
+const corsOptions = {
+  origin: "http://localhost:8080",
+};
 
 app.set("view engine", "ejs");
 app.use(logger("dev"));
+app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "static")));
-app.use(auth);
-app.use(db);
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.get("/", async (request, response) => {
   response.render("homepage");
@@ -66,6 +70,6 @@ app.use("/", async (request, response) => {
   response.status(404).render("404");
 });
 
-app.listen(port, () => {
-  console.log(`Server is running in http://localhost:${port}`);
+app.listen(8000, () => {
+  console.log("Server is running in http://localhost:8000");
 });
