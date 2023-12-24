@@ -20,32 +20,29 @@
   </head>
   <body>
     <%- include("header") %>
-    <div class="h-16 w-full"></div>
-    <div class="blog-tagline h-fit w-full grid place-items-center">
-      <div class="h-full grid place-items-center">
-        <p
-          class="text-5xl text-gray-900 cursor-default font-semibold text-center"
-        >
-          Crafting Stories, Painting Dreams.
-        </p>
-        <br />
-        <br />
-        <p
-          class="text-2xl text-gray-900 cursor-default font-medium text-center"
-        >
-          Explore the vibrant world of art, discover artist stories, and unleash
-          your creativity with Virtus Blog's inspiring narratives and insightful
-          features.
-        </p>
-      </div>
+    <div class="h-12 w-full"></div>
+
+    <div class="blog-tagline h-96 w-full grid place-items-center">
+      <div
+        class="h-full w-9/10 flex-center-center rounded-35px"
+        style="background-image: linear-gradient(to right, #202020, #333333)"
+      ></div>
     </div>
     <div class="h-16 w-full"></div>
   </body>
   <%- include("footer") %>
-  <script type="text/javascript" src="js/blog.js"></script>
+  <script type="text/javascript" src="components/blog.js"></script>
   <script type="text/javascript" src="js/hamburger-menu.js"></script>
   <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+  ></script>
+  <script
+    src="https://unpkg.com/react@18/umd/react.production.min.js"
+    crossorigin
+  ></script>
+  <script
+    src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    crossorigin
   ></script>
 </html>
