@@ -4,9 +4,30 @@
   "description": "Virtus: Embrace artists and art enthusiasts to share and appreciate beauty together.",
   "main": "port.js",
   "type": "commonjs",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon port.js"
+    "start": "nodemon port.js",
+    "test": "react-scripts test",
+    "build": "",
+    "eject": ""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "keywords": [],
   "author": "Rafi Abiyyu Airlangga",
@@ -16,7 +37,9 @@
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "@splidejs/splide-extension-grid": "^0.4.1",
-    "@splidejs/splide-extension-video": "^0.8.0",
+    "@splidejs/splide-extension-video": "^0.8.0","@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "@types/bcrypt": "^5.0.2",
     "@types/express": "^4.17.21",
     "@types/express-session": "^1.17.10",
@@ -66,13 +89,15 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-scripts": "5.0.1",
     "recaptcha-express": "^1.0.2",
     "request": "^2.88.2",
     "sequelize": "^6.35.1",
     "sqlite3": "^5.1.6",
     "swiper": "^11.0.5",
     "tailwindcss": "^3.3.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.23.6",
