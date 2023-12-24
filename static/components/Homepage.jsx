@@ -1,34 +1,7 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
 import Header from "./Header";
-import { Footer, SVG } from "./footer";
-import Helmet from "react-helmet";
-
-const Head = () => {
-  return (
-    <Helmet>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta
-        name="description"
-        content="Discover the beauty of global art on Virtus, a marketplace and free-source that supports skilled artists from around the world. Buy, enjoy, and support their unique creativity now!"
-      />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Virtus | Create Your Masterpiece</title>
-      <link rel="icon" href="img/icon.png" />
-      <link rel="stylesheet" href="css/component.css" />
-      <link rel="stylesheet" href="css/homepage.css" />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css"
-      />
-      <script src="https://cdn.tailwindcss.com"></script>
-    </Helmet>
-  );
-};
+import { Footer, SVG } from "./Footer";
 
 const Body = () => {
   return (
@@ -549,14 +522,14 @@ const Body = () => {
 
 const Homepage = () => {
   return (
-    <div>
-      <Head />
+    <>
       <Header />
       <Body />
       <SVG />
       <Footer />
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Homepage;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Homepage />);
