@@ -5,7 +5,7 @@
   "main": "port.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon port"
+    "start": "nodemon port.js"
   },
   "keywords": [],
   "author": "Rafi Abiyyu Airlangga",
@@ -62,6 +62,7 @@
     "prisma": "^5.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "recaptcha-express": "^1.0.2",
     "request": "^2.88.2",
     "sequelize": "^6.35.1",
@@ -69,5 +70,10 @@
     "swiper": "^11.0.5",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
+    "babel-loader": "^9.1.3"
   }
 }
