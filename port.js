@@ -1,19 +1,13 @@
 const express = require("express");
 const logger = require("morgan");
-const cors = require("cors");
 const path = require("path");
 const app = express();
 app.use(require("./server/auth/googlestrategy.js"));
 app.use(require("./server/auth/authentication.js"));
 app.use(require("./server/db/db.js"));
 
-const corsOptions = {
-  origin: "http://localhost:8080",
-};
-
 app.set("view engine", "ejs");
 app.use(logger("dev"));
-app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "static")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

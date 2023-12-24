@@ -61,7 +61,6 @@ app.get("/profile", (request, response) => {
 });
 
 app.post("/login", async (request, response) => {
-  console.log(request.body);
   const { email, password } = request.body;
   const user = await prisma.user.findUnique({
     where: {
@@ -73,8 +72,8 @@ app.post("/login", async (request, response) => {
     response.redirect("/login");
     return;
   }
-  const isMatch = bcrypt.compareSync(password, user.password);
-  if (!isMatch) {
+  if (!user || !bcrypt.compareSync(password, user.password)) {
+    response.status(401).json({ message: "Invalid credentials!" });
     console.log("Error: Wrong password!");
     response.redirect("/login");
     return;
@@ -89,6 +88,7 @@ app.post("/login", async (request, response) => {
       algorithm: "HS256",
     }
   );
+  request.session.token = token;
   response.cookie(token, {
     expires: new Date(Date.now() + 3600000),
     secure: false,
@@ -101,25 +101,21 @@ app.post("/login", async (request, response) => {
 
 app.post("/register", async (request, response) => {
   const { name, email, password } = request.body;
-  console.log(request.body);
-  if (!password) {
-    console.log("Error: Password is required!");
-    response.status(400).json({
-      error: "Error: Password is required!",
-    });
-    return;
+  const errors = validate(request.body);
+  if (errors.length) {
+    return response.status(400).json({ errors });
   }
   try {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
-    const NewUser = await prisma.user.create({
+    const user = await prisma.user.create({
       data: {
         name,
         email,
         password: hashedPassword,
       },
     });
-    console.log("User successfully registered!", NewUser);
+    console.log("User successfully registered!", user);
     response.status(200).json({
       message: "User successfully registered!",
     });
@@ -163,5 +159,23 @@ app.delete("/profile/:id", async (request, response) => {
   });
   response.redirect("/profile");
 });
+
+function validate(data) {
+  const errors = [];
+  if (!data.name) {
+    errors.push({ message: "Name is required!" });
+  }
+  if (!data.email) {
+    errors.push({ message: "Email is required!" });
+  } else if (!/\S+@\S+\.\S+/.test(data.email)) {
+    errors.push({ message: "Email is invalid!" });
+  }
+  if (!data.password) {
+    errors.push({ message: "Password is required!" });
+  } else if (data.password.length < 8) {
+    errors.push({ message: "Password must be at least 8 characters long!" });
+  }
+  return errors;
+}
 
 module.exports = app;
