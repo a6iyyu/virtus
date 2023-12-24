@@ -31,7 +31,7 @@ app.get("/analytics", async (request, response) => {
 });
 
 app.get("/blog", (request, response) => {
-  response.sendFile(path.join(__dirname, "views", "blog.html"));
+  response.render("blog");
 });
 
 app.get("/careers", async (request, response) => {
