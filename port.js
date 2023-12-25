@@ -7,7 +7,8 @@ app.use(require("./server/auth/googlestrategy.js"));
 app.use(require("./server/auth/authentication.js"));
 app.use(require("./server/db/db.js"));
 
-app.set("view engine", "ejs");
+app.set("view engine", "html");
+app.engine("html", require("ejs").renderFile);
 app.use(logger("dev"));
 app.use(express.static(path.join(__dirname, "static")));
 app.use(express.urlencoded({ extended: true }));

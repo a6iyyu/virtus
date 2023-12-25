@@ -8,7 +8,7 @@ import ReactDOM from "react-dom";
 import "../css/component.css";
 import "../css/homepage.css";
 
-function Header() {
+const Header = () => {
   return (
     <div className="navbar h-9-5-r w-full grid place-items-center">
       <div className="h-full w-19/20 flex">
