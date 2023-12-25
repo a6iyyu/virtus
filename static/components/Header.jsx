@@ -1,7 +1,9 @@
+/* eslint-disable react/no-deprecated */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
 import React from "react";
+import { ReactDOM } from "react-dom";
 import "../css/component.css";
 import "../css/homepage.css";
 
@@ -56,4 +58,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+ReactDOM(<Header />, document.getElementById("header"));

@@ -1,7 +1,9 @@
+/* eslint-disable no-extra-semi */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { ReactDOM } from "react-dom";
 import "../css/component.css";
 import "../css/homepage.css";
 
@@ -154,4 +156,5 @@ const Footer = () => {
   );
 };
 
-export default { SVG, Footer };
+ReactDOM(<SVG />, document.getElementById("svg"));
+ReactDOM(<Footer />, document.getElementById("footer"));
