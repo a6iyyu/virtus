@@ -1,13 +1,14 @@
+/* eslint-disable no-extra-semi */
 /* eslint-disable react/no-deprecated */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
 import React from "react";
-import { ReactDOM } from "react-dom";
+import ReactDOM from "react-dom";
 import "../css/component.css";
 import "../css/homepage.css";
 
-const Header = () => {
+function Header() {
   return (
     <div className="navbar h-9-5-r w-full grid place-items-center">
       <div className="h-full w-19/20 flex">
@@ -58,4 +59,4 @@ const Header = () => {
   );
 };
 
-ReactDOM(<Header />, document.getElementById("header"));
+ReactDOM.render(<Header />, document.getElementById("header"));

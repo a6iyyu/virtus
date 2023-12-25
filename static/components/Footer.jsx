@@ -1,9 +1,10 @@
+/* eslint-disable react/no-deprecated */
 /* eslint-disable no-extra-semi */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { ReactDOM } from "react-dom";
+import ReactDOM from "react-dom";
 import "../css/component.css";
 import "../css/homepage.css";
 
@@ -156,5 +157,5 @@ const Footer = () => {
   );
 };
 
-ReactDOM(<SVG />, document.getElementById("svg"));
-ReactDOM(<Footer />, document.getElementById("footer"));
+ReactDOM.render(<SVG />, document.getElementById("svg"));
+ReactDOM.render(<Footer />, document.getElementById("footer"));

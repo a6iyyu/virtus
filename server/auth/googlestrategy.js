@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const passport = require("passport");
 const googlestrategy = require("passport-google-oauth20").Strategy;
 require("dotenv").config();
