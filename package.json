@@ -2,8 +2,10 @@
   "name": "virtus",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "main": "port.js",
+  "type": "commonjs",
   "scripts": {
+    "start": "nodemon port.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
