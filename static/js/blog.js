@@ -11,3 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide__1.mount();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const splide__2 = new Splide(".splide__2", {
+    arrows: false,
+    focus: 0,
+    omitEnd: true,
+    perPage: 5,
+    type: "loop",
+  });
+  splide__2.mount();
+});
