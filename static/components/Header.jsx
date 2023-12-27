@@ -3,10 +3,10 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
-import React from "react";
-import ReactDOM from "react-dom";
-import "../css/component.css";
-import "../css/homepage.css";
+const React = require("react");
+const ReactDOM = require("react-dom");
+require("../css/component.css");
+require("../css/homepage.css");
 
 const Header = () => {
   return (

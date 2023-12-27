@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "main": "port.js",
+  "type": "commonjs",
   "scripts": {
     "start": "nodemon port.js",
     "dev": "vite",
@@ -78,6 +79,8 @@
     "web-vitals": "^3.5.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
