@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 const Pool = createPool({
   host: "localhost",
   user: "root",
-  password: process.env.PASSWORD_MYSQL,
+  password: process.env.MYSQL_PASSWORD,
   database: "virtus",
   localhost: 3306,
 });
