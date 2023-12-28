@@ -99,8 +99,7 @@ app.post("/login", async (request, response) => {
 });
 
 app.post("/register", async (request, response) => {
-  const { name, email, password } = request.body;
-  console.log(request.body);
+  const { username, email, password } = request.body;
   if (!password) {
     console.log("Error: Password is required!");
     response.status(400).json({
@@ -113,8 +112,8 @@ app.post("/register", async (request, response) => {
     const hashedPassword = await bcrypt.hash(password, salt);
     const NewUser = await prisma.users.create({
       data: {
-        name,
-        email,
+        username: username,
+        email: email,
         password: hashedPassword,
       },
     });
@@ -128,6 +127,7 @@ app.post("/register", async (request, response) => {
       error: "Internal Server Error",
     });
   }
+  response.redirect("/profile");
 });
 
 app.get("/logout", async (request, response) => {
@@ -144,10 +144,10 @@ app.patch("/profile/:id", async (request, response) => {
       id: id,
     },
     data: {
-      name: request.body.name,
+      username: request.body.username,
     },
     select: {
-      name: true,
+      username: true,
     },
   });
   response.redirect("/profile");
