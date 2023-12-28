@@ -55,7 +55,7 @@ app.get("/profile", (request, response) => {
     jwt.verify(token, process.env.JWT_SECRET, async (error) => {
       if (error) {
         response.redirect("/login");
-        return;
+        return error;
       }
     });
   }
@@ -63,7 +63,7 @@ app.get("/profile", (request, response) => {
 
 app.post("/login", async (request, response) => {
   const { email, password } = request.body;
-  const user = await prisma.user.findUnique({
+  const user = await prisma.users.findUnique({
     where: {
       email: email,
     },
@@ -73,8 +73,8 @@ app.post("/login", async (request, response) => {
     response.redirect("/login");
     return;
   }
-  if (!user || !bcrypt.compareSync(password, user.password)) {
-    response.status(401).json({ message: "Invalid credentials!" });
+  const isMatch = bcrypt.compareSync(password, user.password);
+  if (!isMatch) {
     console.log("Error: Wrong password!");
     response.redirect("/login");
     return;
@@ -89,7 +89,6 @@ app.post("/login", async (request, response) => {
       algorithm: "HS256",
     }
   );
-  request.session.token = token;
   response.cookie(token, {
     expires: new Date(Date.now() + 3600000),
     secure: false,
@@ -97,26 +96,29 @@ app.post("/login", async (request, response) => {
     sameSite: true,
   });
   response.redirect("/profile");
-  return;
 });
 
 app.post("/register", async (request, response) => {
   const { name, email, password } = request.body;
-  const errors = validate(request.body);
-  if (errors.length) {
-    return response.status(400).json({ errors });
+  console.log(request.body);
+  if (!password) {
+    console.log("Error: Password is required!");
+    response.status(400).json({
+      error: "Error: Password is required!",
+    });
+    return;
   }
   try {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
-    const user = await prisma.user.create({
+    const NewUser = await prisma.users.create({
       data: {
         name,
         email,
         password: hashedPassword,
       },
     });
-    console.log("User successfully registered!", user);
+    console.log("User successfully registered!", NewUser);
     response.status(200).json({
       message: "User successfully registered!",
     });
@@ -129,6 +131,7 @@ app.post("/register", async (request, response) => {
 });
 
 app.get("/logout", async (request, response) => {
+  response.clearCookie(token);
   request.session.destroy();
   response.redirect("/login");
 });
@@ -136,7 +139,7 @@ app.get("/logout", async (request, response) => {
 app.patch("/profile/:id", async (request, response) => {
   console.log(request.body);
   const { id } = request.body;
-  await prisma.user.update({
+  await prisma.users.update({
     where: {
       id: id,
     },
@@ -153,30 +156,12 @@ app.patch("/profile/:id", async (request, response) => {
 app.delete("/profile/:id", async (request, response) => {
   console.log(request.body);
   const { id } = request.body;
-  await prisma.user.delete({
+  await prisma.users.delete({
     where: {
       id: id,
     },
   });
   response.redirect("/profile");
 });
-
-function validate(data) {
-  const errors = [];
-  if (!data.name) {
-    errors.push({ message: "Name is required!" });
-  }
-  if (!data.email) {
-    errors.push({ message: "Email is required!" });
-  } else if (!/\S+@\S+\.\S+/.test(data.email)) {
-    errors.push({ message: "Email is invalid!" });
-  }
-  if (!data.password) {
-    errors.push({ message: "Password is required!" });
-  } else if (data.password.length < 8) {
-    errors.push({ message: "Password must be at least 8 characters long!" });
-  }
-  return errors;
-}
 
 module.exports = app;
