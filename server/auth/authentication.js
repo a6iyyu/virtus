@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 const express = require("express");
 const session = require("express-session");
@@ -103,7 +104,7 @@ app.post("/register", async (request, response) => {
   if (!password) {
     console.log("Error: Password is required!");
     response.status(400).json({
-      error: "Error: Password is required!",
+      error: "Password is required!",
     });
     return;
   }
@@ -137,7 +138,6 @@ app.get("/logout", async (request, response) => {
 });
 
 app.patch("/profile/:id", async (request, response) => {
-  console.log(request.body);
   const { id } = request.body;
   await prisma.users.update({
     where: {
@@ -150,18 +150,15 @@ app.patch("/profile/:id", async (request, response) => {
       username: true,
     },
   });
-  response.redirect("/profile");
 });
 
 app.delete("/profile/:id", async (request, response) => {
-  console.log(request.body);
   const { id } = request.body;
   await prisma.users.delete({
     where: {
       id: id,
     },
   });
-  response.redirect("/profile");
 });
 
 module.exports = app;

@@ -4,12 +4,11 @@ const { createPool } = require("mysql");
 require("dotenv").config();
 
 const app = express();
-app.use(express.urlencoded({ extended: true }));
 
 const Pool = createPool({
   host: "localhost",
   user: "root",
-  password: process.env.MYSQL_PASSWORD,
+  password: "MizuDatabase16~",
   database: "virtus",
   localhost: 3306,
 });

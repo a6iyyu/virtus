@@ -4,12 +4,11 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
-import React from "react";
-import ReactDOM from "react-dom";
-import "../css/component.css";
-import "../css/homepage.css";
+const React = require("react");
+require("../css/component.css");
+require("../css/homepage.css");
 
-const SVG = () => {
+export function SVG() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +22,9 @@ const SVG = () => {
       ></path>
     </svg>
   );
-};
+}
 
-const Footer = () => {
+export function Footer() {
   return (
     <footer className="h-96 w-full grid place-items-center">
       <div className="footer-parent h-full w-9/10 flex-center-center">
@@ -156,11 +155,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-ReactDOM.createRoot(document.getElementById("footer")).render(
-  <React.StrictMode>
-    <SVG />
-    <Footer />
-  </React.StrictMode>
-);
+}

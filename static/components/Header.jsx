@@ -3,12 +3,11 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
-import React from "react";
-import ReactDOM from "react-dom";
-import "../css/component.css";
-import "../css/homepage.css";
+const React = require("react");
+require("../css/component.css");
+require("../css/homepage.css");
 
-const Header = () => {
+export default function Header() {
   return (
     <div className="navbar h-9-5-r w-full grid place-items-center">
       <div className="h-full w-19/20 flex">
@@ -58,9 +57,3 @@ const Header = () => {
     </div>
   );
 };
-
-ReactDOM.createRoot(document.getElementById("header")).render(
-  <React.StrictMode>
-    <Header />
-  </React.StrictMode>
-);
