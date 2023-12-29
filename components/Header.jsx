@@ -1,15 +1,12 @@
-/* eslint-disable no-extra-semi */
-/* eslint-disable react/no-deprecated */
-/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-/* eslint-disable react-refresh/only-export-components */
-const React = require("react");
-require("../css/component.css");
-require("../css/homepage.css");
+import * as React from "react";
+import ReactDOM from "react-dom/client";
+import "../css/component.css";
+import "../css/homepage.css";
 
 export default function Header() {
   return (
-    <div className="navbar h-9-5-r w-full grid place-items-center">
+    <div className="navbar w-full grid place-items-center">
       <div className="h-full w-19/20 flex">
         <div className="h-full w-1/4 grid place-items-center">
           <a href="/" className="logo">
@@ -27,7 +24,7 @@ export default function Header() {
               id=""
               className="search-box w-9/10 rounded-50px text-sm"
               placeholder="Search"
-              style={{ padding: "0 20px" }}
+              style="padding: 0 20px"
             />
             <div className="search-icon grid place-items-center h-70-px rounded-50px cursor-pointer">
               <img src="img/search.png" alt="" width="35" id="search-icon" />
@@ -56,4 +53,10 @@ export default function Header() {
       </div>
     </div>
   );
-};
+}
+
+ReactDOM.createRoot(document.getElementById("header")).render(
+  <React.StrictMode>
+    <Header />
+  </React.StrictMode>
+);

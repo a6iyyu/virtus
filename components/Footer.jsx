@@ -4,9 +4,10 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
-const React = require("react");
-require("../css/component.css");
-require("../css/homepage.css");
+import * as React from "react";
+import ReactDOM from "react-dom/client";
+import "../css/component.css";
+import "../css/homepage.css";
 
 export function SVG() {
   return (
@@ -156,3 +157,10 @@ export function Footer() {
     </footer>
   );
 }
+
+ReactDOM.createRoot(document.getElementById("footer")).render(
+  <React.StrictMode>
+    <SVG />
+    <Footer />
+  </React.StrictMode>
+);

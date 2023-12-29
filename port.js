@@ -1,18 +1,23 @@
 /* eslint-disable no-undef */
-const express = require("express");
-const logger = require("morgan");
-const path = require("path");
+import express from "express";
+import logger from "morgan";
+import path from "path";
+import ejs from "ejs";
+import googlestrategy from "./server/auth/googlestrategy.js";
+import auth from "./server/auth/authentication.js";
+import db from "./server/db/db.js";
 const app = express();
-app.use(require("./server/auth/googlestrategy.js"));
-app.use(require("./server/auth/authentication.js"));
-app.use(require("./server/db/db.js"));
 
 app.set("view engine", "html");
-app.engine("html", require("ejs").renderFile);
+app.engine("html", ejs.renderFile);
 app.use(logger("dev"));
-app.use(express.static(path.join(__dirname, "static")));
+app.use(express.static(path.join("components")));
+app.use(express.static(path.join("static")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(auth);
+app.use(db);
+app.use(googlestrategy);
 
 app.get("/", async (request, response) => {
   response.render("homepage");

@@ -1,0 +1,8 @@
+# Ignoring Modules
+components/
+node_modules/
+server/
+static/
+
+# Ignoring Files
+port.js

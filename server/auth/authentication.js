@@ -1,18 +1,21 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-const express = require("express");
-const session = require("express-session");
-const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
-const path = require("path");
-const { PrismaClient } = require("@prisma/client");
-const passport = require("passport");
-require("dotenv").config();
+import express from "express";
+import session from "express-session";
+import jwt from "jsonwebtoken";
+import bcrypt from "bcrypt";
+import ejs from "ejs";
+import path from "path";
+import { PrismaClient } from "@prisma/client";
+import passport from "passport";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 const prisma = new PrismaClient();
-app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, "static")));
+app.set("view engine", "html");
+app.engine("html", ejs.renderFile);
+app.use(express.static(path.join("static")));
 app.use(express.json());
 
 app.use(
@@ -161,4 +164,4 @@ app.delete("/profile/:id", async (request, response) => {
   });
 });
 
-module.exports = app;
+export default app;
