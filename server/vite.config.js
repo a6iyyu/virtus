@@ -18,5 +18,5 @@ export default defineConfig({
     open: true,
     cors: true,
   },
-  base: "./components"
+  base: "./components",
 });

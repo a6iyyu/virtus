@@ -1,13 +1,5 @@
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable no-extra-semi */
-/* eslint-disable react/no-deprecated */
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react-refresh/only-export-components */
 import * as React from "react";
 import ReactDOM from "react-dom/client";
-import "../css/component.css";
-import "../css/homepage.css";
 
 export function SVG() {
   return (

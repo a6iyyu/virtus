@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-vars */
 import * as React from "react";
 import ReactDOM from "react-dom/client";
-import "../css/component.css";
-import "../css/homepage.css";
 
 export default function Header() {
   return (
@@ -24,7 +21,7 @@ export default function Header() {
               id=""
               className="search-box w-9/10 rounded-50px text-sm"
               placeholder="Search"
-              style="padding: 0 20px"
+              style={{ padding: "0 20px" }}
             />
             <div className="search-icon grid place-items-center h-70-px rounded-50px cursor-pointer">
               <img src="img/search.png" alt="" width="35" id="search-icon" />
