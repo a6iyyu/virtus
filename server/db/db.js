@@ -1,16 +1,15 @@
-/* eslint-disable no-undef */
 import express from "express";
-import { createPool } from "mysql";
+import mysql2 from "mysql2";
 import dotenv from "dotenv";
 dotenv.config();
 const app = express();
 
-const Pool = createPool({
+const Pool = mysql2.createConnection({
   host: "localhost",
   user: "root",
   password: "MizuDatabase16~",
   database: "virtus",
-  localhost: 3306,
+  port: 3306,
 });
 
 Pool.query(`SELECT * FROM USERS`, (err) => {

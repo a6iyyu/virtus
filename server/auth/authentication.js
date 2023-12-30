@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
 import express from "express";
 import session from "express-session";
 import jwt from "jsonwebtoken";
@@ -109,19 +107,18 @@ app.post("/register", async (request, response) => {
     response.status(400).json({
       error: "Password is required!",
     });
-    return;
   }
   try {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
-    const NewUser = await prisma.users.create({
+    const newUser = await prisma.users.create({
       data: {
-        username: username,
-        email: email,
+        username,
+        email,
         password: hashedPassword,
       },
     });
-    console.log("User successfully registered!", NewUser);
+    console.log("User successfully registered!\n", newUser);
     response.status(200).json({
       message: "User successfully registered!",
     });
@@ -134,13 +131,7 @@ app.post("/register", async (request, response) => {
   response.redirect("/profile");
 });
 
-app.get("/logout", async (request, response) => {
-  response.clearCookie(token);
-  request.session.destroy();
-  response.redirect("/login");
-});
-
-app.patch("/profile/:id", async (request, response) => {
+app.patch("/register/:id", async (request, response) => {
   const { id } = request.body;
   await prisma.users.update({
     where: {
@@ -155,13 +146,19 @@ app.patch("/profile/:id", async (request, response) => {
   });
 });
 
-app.delete("/profile/:id", async (request, response) => {
+app.delete("/register/:id", async (request, response) => {
   const { id } = request.body;
   await prisma.users.delete({
     where: {
       id: id,
     },
   });
+});
+
+app.get("/logout", async (request, response) => {
+  response.clearCookie(token);
+  request.session.destroy();
+  response.redirect("/login");
 });
 
 export default app;

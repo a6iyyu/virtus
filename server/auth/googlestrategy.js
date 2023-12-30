@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import express from "express";
 import passport from "passport";
 import { Strategy as googlestrategy } from "passport-google-oauth20";
@@ -14,7 +13,7 @@ passport.use(
       callbackURL: process.env.CALLBACK_URL,
       passReqToCallback: true,
     },
-    function (request, accessToken, refreshToken, profile, done) {
+    function (_request, _accessToken, _refreshToken, profile, done) {
       done(null, profile);
     }
   )

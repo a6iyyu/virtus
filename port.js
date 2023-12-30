@@ -1,7 +1,7 @@
-/* eslint-disable no-undef */
 import express from "express";
 import logger from "morgan";
 import path from "path";
+import cors from "cors";
 import ejs from "ejs";
 import googlestrategy from "./server/auth/googlestrategy.js";
 import auth from "./server/auth/authentication.js";
@@ -11,6 +11,7 @@ const app = express();
 app.set("view engine", "html");
 app.engine("html", ejs.renderFile);
 app.use(logger("dev"));
+app.use(cors());
 app.use(express.static(path.join("components")));
 app.use(express.static(path.join("static")));
 app.use(express.urlencoded({ extended: true }));
