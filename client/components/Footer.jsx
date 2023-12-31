@@ -1,7 +1,7 @@
 import * as React from "react";
 import ReactDOM from "react-dom/client";
 
-export function SVG() {
+const SVG = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ export function SVG() {
   );
 }
 
-export function Footer() {
+const Footer = () => {
   return (
     <footer className="h-96 w-full grid place-items-center">
       <div className="footer-parent h-full w-9/10 flex-center-center">

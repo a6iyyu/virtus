@@ -1,7 +1,7 @@
 import * as React from "react";
 import ReactDOM from "react-dom/client";
 
-export default function Header() {
+const Header = () => {
   return (
     <div className="navbar w-full grid place-items-center">
       <div className="h-full w-19/20 flex">
