@@ -1,9 +1,12 @@
 import express from "express";
 import session from "express-session";
+import bodyParser from "body-parser";
+import cors from "cors";
+import logger from "morgan";
+import path from "path";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import ejs from "ejs";
-import path from "path";
 import { PrismaClient } from "@prisma/client";
 import passport from "passport";
 import dotenv from "dotenv";
@@ -12,8 +15,12 @@ dotenv.config();
 const app = express();
 const prisma = new PrismaClient();
 app.set("view engine", "html");
+app.set("views", path.join("..", "client", "views"));
 app.engine("html", ejs.renderFile);
-app.use(express.static(path.join("static")));
+app.use(logger("dev"));
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(express.json());
 
 app.use(
@@ -28,11 +35,11 @@ app.use(
 );
 
 app.get("/login", (request, response) => {
-  response.render("login");
+  response.render("login", { header: "header", footer: "footer" });
 });
 
 app.get("/register", (request, response) => {
-  response.render("register");
+  response.render("register", { header: "header", footer: "footer" });
 });
 
 app.get(
@@ -51,7 +58,7 @@ app.get(
 );
 
 app.get("/profile", (request, response) => {
-  response.render("profile");
+  response.render("profile", { header: "header", footer: "footer" });
   if (request.cookies) {
     const token = request.cookies.token;
     jwt.verify(token, process.env.JWT_SECRET, async (error) => {

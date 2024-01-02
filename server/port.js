@@ -55,6 +55,10 @@ app.get("/limited-editions", async (request, response) => {
   response.render("limited-editions", { header: "header", footer: "footer" });
 });
 
+app.get("/not-logged-in", async (request, response) => {
+  response.render("not-logged-in", { header: "header", footer: "footer" });
+});
+
 app.get("/saved", async (request, response) => {
   response.render("saved", { header: "header", footer: "footer" });
 });
