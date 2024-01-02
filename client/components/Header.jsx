@@ -1,5 +1,7 @@
 import * as React from "react";
 import ReactDOM from "react-dom/client";
+import "../static/css/component.css";
+import "../static/css/homepage.css";
 
 const Header = () => {
   return (
