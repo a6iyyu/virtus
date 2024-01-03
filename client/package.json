@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "proxy": "http://localhost:8000",
+  "main": "./views/homepage.html",
   "scripts": {
-    "start": "nodemon",
+    "start": "nodemon main",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
