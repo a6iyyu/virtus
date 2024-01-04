@@ -1,8 +1,7 @@
-# Ignoring Modules
-components/
-node_modules/
-server/
-static/
-
-# Ignoring Files
-port.js
+*.cjs
+*.js
+*.json
+*.jsx
+*.mjs
+*.ts
+*.tsx

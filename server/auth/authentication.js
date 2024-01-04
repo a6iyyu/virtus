@@ -15,13 +15,11 @@ dotenv.config();
 const app = express();
 const prisma = new PrismaClient();
 app.set("view engine", "html");
-app.set("views", [
-  path.join("..", "client", "views"),
-  path.join("..", "client", "components"),
-]);
+app.set("views", [path.join("client", "views"), path.join("client", "components")]);
 app.engine("html", ejs.renderFile);
 app.use(logger("dev"));
 app.use(cors());
+app.use(express.static(path.join("client")));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.json());

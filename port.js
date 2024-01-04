@@ -10,10 +10,7 @@ import db from "./server/db/db.js";
 const app = express();
 
 app.set("view engine", "html");
-app.set("views", [
-  path.join("client", "views"),
-  path.join("client", "components"),
-]);
+app.set("views", [path.join("client", "views"), path.join("client", "components")]);
 app.engine("html", ejs.renderFile);
 app.use(logger("dev"));
 app.use(cors());
