@@ -3,10 +3,19 @@ node_modules/
 /.pnp
 /coverage
 /build
+.pnp.js
 css/
-dist/
-dist-ssr/
+dist
+dist-ssr
+*.local
 .vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Ignoring files
 .env
@@ -15,16 +24,7 @@ dist-ssr/
 .env.development.local
 .env.test.local
 .env.production.local
-*.local
 *.log
-.pnp.js
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
