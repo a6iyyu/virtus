@@ -4,6 +4,6 @@
 </template>
 
 <script setup>
-import header from "./components/header.vue";
-import footer from "./components/footer.vue";
+import header from "./header.vue";
+import footer from "./footer.vue";
 </script>
