@@ -1,0 +1,498 @@
+<template>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta
+        name="description"
+        content="Privacy is prioritized in Virtus, with transparent terms of use and privacy, making your art shopping experience feel safe and secure."
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Terms & Privacy</title>
+      <link rel="icon" href="/static/img/icon.png" />
+      <link rel="stylesheet" href="/static/css/component.css" />
+      <link rel="stylesheet" href="/static/css/terms-and-privacy.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+      <!-- <%- include("header") %> -->
+      <div class="h-48 w-full grid place-items-center">
+        <p
+          class="text-1xl cursor-default text-gray-900 dark:text-white text-center"
+          data-aos="fade-up"
+        >
+          <strong class="text-6xl">Terms & Privacy</strong>
+          <br />
+          Last Updated December 22nd, 2023
+        </p>
+      </div>
+      <div class="h-8 w-full"></div>
+      <div class="terms-and-privacy h-fit w-full grid place-items-center">
+        <div class="h-full w-9/10 flex justify-between">
+          <section>
+            <p
+              class="text-2xl text-gray-900 cursor-default font-bold"
+              data-aos="fade-up"
+            >
+              List of Contents
+            </p>
+            <br />
+            <div data-aos="fade-up">
+              <a
+                class="intro-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Introduction
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-bold w-fit"
+              data-aos="fade-up"
+            >
+              Privacy Policy
+            </p>
+            <div data-aos="fade-up">
+              <a
+                class="personal-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Personal Information
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="purpose-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Purpose of Collection
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="cookie-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Cookie Policy
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="third-party-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Third-Party Data
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="data-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Data Security
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="access-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Access and Control
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="policy-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Policy Changes
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <br /><br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-bold w-fit"
+              data-aos="fade-up"
+            >
+              Terms of Use
+            </p>
+            <div data-aos="fade-up">
+              <a
+                class="applicable-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Applicable Law
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="company-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Company Contact
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="compliance-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Compliance with GDPR, CCPA, etc.
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="children-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Children's Policy
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="artwork-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Artwork Guarantee
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-up">
+              <a
+                class="use-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
+                >Use of Images and Reviews
+                <div class="h-full w-fit flex items-start">
+                  <img src="/static/img/link.png" alt="" width="12" />
+                </div>
+              </a>
+            </div>
+          </section>
+          <br />
+          <br />
+          <section>
+            <div
+              class="intro-paragraph text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Understanding Your Privacy in Virtus
+            </div>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              Welcome to Virtus, a place where art meets privacy. We really
+              appreciate your visit and want to ensure that you feel safe and
+              comfortable while exploring the world of art we have to offer. In
+              this regard, we would like to share with you the guidelines and
+              conditions that govern your experience on our site. We invite you
+              to read our Privacy Policy and Terms of Use carefully. We have
+              made every effort to make it clear, transparent, and focused on
+              your interests. We believe that your privacy is of the utmost
+              importance, and we are proud to share art with you while
+              respecting and protecting your personal data.
+            </p>
+            <br />
+            <br class="personal-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Personal Information
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              We respect your privacy and collect various types of personal
+              information when you interact with our website. This information
+              includes your name, email address, shipping address, phone number,
+              payment details, and site usage preferences. We understand the
+              importance of safeguarding your personal information and are
+              genuinely committed to protecting it.
+            </p>
+            <br />
+            <br class="purpose-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Purpose of Collection
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              The personal information we collect serves several important
+              purposes. First, it allows us to accurately process your orders
+              and ensure that the artwork you select is delivered flawlessly.
+              Second, we use this information to provide regular updates on the
+              latest collections, exclusive promotions, and exciting art events.
+              This helps us personalize your experience on our site and ensure
+              you always have exclusive access to the best of Arthemias.
+            </p>
+            <br />
+            <br class="cookie-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Cookie Policy
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              Our website uses secure cookie technology to enhance your browsing
+              experience. These cookies are small text files stored on your
+              device and help us understand how you interact with our site. With
+              this information, we can optimize the appearance and functionality
+              of the site, understand your preferences, and provide more
+              tailored recommendations. You can manage cookie settings through
+              your web browser.
+            </p>
+            <br />
+            <br class="third-party-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Third-Party Data
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              To ensure your orders arrive safely and on time, we may share your
+              shipping information with carefully selected third-party shipping
+              partners. Please note that we only share information necessary to
+              fulfill your shipment, and we work diligently to ensure our
+              shipping partners adhere to high privacy standards.
+            </p>
+            <br />
+            <br class="data-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Data Security
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              The security of your personal information is our top priority.
+              Therefore, we implement strict technical and organizational
+              security measures to protect your data from unauthorized access or
+              use. We use strong encryption technology to protect your data
+              during transit and storage.
+            </p>
+            <br />
+            <br class="access-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Access and Control
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              We acknowledge the importance of giving you control over your
+              personal information. If you wish to access, update, or even
+              delete the data we store about you, our customer support team will
+              be happy to assist you. We believe you should have full control
+              over your data, and we are committed to fulfilling your requests
+              in accordance with applicable laws.
+            </p>
+            <br />
+            <br class="policy-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Policy Changes
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              We are committed to staying transparent with you. When there are
+              changes to our Privacy Policy, whether due to new features or
+              legal updates, we will promptly announce them on our website.
+              These changes will take effect immediately upon the date of the
+              announcement. This way, you ill always have the latest information
+              on how we protect and use your data.
+            </p>
+            <br />
+            <br class="applicable-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Applicable Law
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              These Terms of Use are subject to the
+              <a
+                href="https://ppid.unud.ac.id//static/img/admin/page_attc/9d0d1cd9a94ba484f9e18bed334f2d10.pdf"
+                class="underline transition-all ease-in-out hover:text-gray-600"
+                target="_blank"
+                >laws of UU No. 19 of 2002</a
+              >
+              concerning Copyright. By using the Arthemias website, you agree to
+              be bound by the laws of this jurisdiction in the resolution of any
+              disputes that may arise. This provides you with legal certainty
+              that your rights will be respected and protected under the
+              applicable law.
+            </p>
+            <br />
+            <br class="company-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Company Contact
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              We highly value communication with you as our user. If you have
+              any questions, feedback, or concerns regarding our Privacy Policy
+              or Terms of Use, please don't hesitate to contact our customer
+              support team. We are available at
+              <a
+                href="mailto:mizukinako7@gmail.com"
+                target="_blank"
+                class="underline transition-all ease-in-out hover:text-gray-600"
+                >mizukinako7@gmail.com</a
+              >
+              to help answer your questions and provide the assistance you need.
+            </p>
+            <br />
+            <br class="compliance-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Compliance with GDPR, CCPA, etc.
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              We recognize the importance of complying with relevant privacy
+              regulations. Therefore, Arthemias is committed to complying with
+              all relevant privacy regulations, including the General Data
+              Protection Regulation (GDPR) in Europe and the California Consumer
+              Privacy Act (CCPA) in California, where applicable. We strive to
+              meet the highest standards in protecting your data and prioritize
+              your privacy.
+            </p>
+            <br />
+            <br class="children-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Children's Policy
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              We aim to provide a safe and age-appropriate environment for all
+              our users. Therefore, Arthemias is intended for users aged 15
+              years. We will not knowingly collect or process personal
+              information from individuals below this age limit. This is our
+              step to protect children and safeguard their data integrity.
+            </p>
+            <br />
+            <br class="artwork-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Artwork Guarantee
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              We proudly guarantee the quality of the artwork we offer. We have
+              an Artwork Guarantee policy that provides guidance on how you can
+              request returns and refunds if you are not satisfied with your
+              purchase. We want to ensure you are satisfied with your shopping
+              experience at Arthemias and have full confidence in the quality of
+              the artwork we provide.
+            </p>
+            <br />
+            <br class="use-paragraph" />
+            <p
+              class="text-3xl text-gray-900 cursor-default font-semibold"
+              data-aos="fade-up"
+            >
+              Use of Images and Reviews
+            </p>
+            <br />
+            <p
+              class="text-1xl text-gray-900 cursor-default font-normal text-justify"
+              data-aos="fade-up"
+            >
+              We appreciate your contributions as our customers. By submitting
+              images or reviews of our artwork, you grant Arthemias the right to
+              use, display, and share such materials on our website and
+              promotional materials. We aim to showcase your artwork to a larger
+              art community and greatly appreciate your participation in
+              building our art community.
+            </p>
+          </section>
+        </div>
+      </div>
+      <div class="h-8 w-full"></div>
+    </body>
+    <!-- <%- include("footer") %> -->
+    <script type="text/javascript" src="/static/js/hamburger-menu.js"></script>
+    <script
+      type="text/javascript"
+      src="/static/js/terms-and-privacy.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/aos@next/dist/aos.js"
+    ></script>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
+  </html>
+</template>

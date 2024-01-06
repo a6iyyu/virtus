@@ -1,0 +1,10 @@
+<template>
+  <li
+    class="splide__slide rounded-15px"
+    data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU"
+  >
+    <img
+      src="https://cf.ltkcdn.net/dogs/images/orig/235430-2000x1332-australian-shepherd-puppy.jpg"
+    />
+  </li>
+</template>
