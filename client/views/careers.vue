@@ -10,9 +10,9 @@
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Careers</title>
-      <link rel="icon" href="/static/img/icon.png" />
-      <link rel="stylesheet" href="/static/css/component.css" />
-      <link rel="stylesheet" href="/static/css/careers.css" />
+      <link rel="icon" href="../static/img/icon.png" />
+      <link rel="stylesheet" href="../static/css/component.css" />
+      <link rel="stylesheet" href="../static/css/careers.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link
         rel="stylesheet"
@@ -118,7 +118,7 @@
                     <div class="h-3/5 w-full grid place-items-center">
                       <div class="h-4/5 w-9/10 flex items-end justify-center">
                         <img
-                          src="/static/img/innovation.png"
+                          src="../static/img/innovation.png"
                           alt="Innovation"
                           width="135"
                         />
@@ -145,7 +145,7 @@
                     <div class="h-3/5 w-full grid place-items-center">
                       <div class="h-4/5 w-9/10 flex items-end justify-center">
                         <img
-                          src="/static/img/creative.png"
+                          src="../static/img/creative.png"
                           alt="Creative"
                           width="150"
                         />
@@ -172,7 +172,7 @@
                     <div class="h-3/5 w-full grid place-items-center">
                       <div class="h-4/5 w-9/10 flex items-end justify-center">
                         <img
-                          src="/static/img/integrity.png"
+                          src="../static/img/integrity.png"
                           alt="Integrity"
                           width="150"
                         />
@@ -199,7 +199,7 @@
                     <div class="h-3/5 w-full grid place-items-center">
                       <div class="h-4/5 w-9/10 flex items-end justify-center">
                         <img
-                          src="/static/img/growth.png"
+                          src="../static/img/growth.png"
                           alt="Growth"
                           width="150"
                         />
@@ -226,7 +226,7 @@
                     <div class="h-3/5 w-full grid place-items-center">
                       <div class="h-4/5 w-9/10 flex items-end justify-center">
                         <img
-                          src="/static/img/collaboration.png"
+                          src="../static/img/collaboration.png"
                           alt="Collaboration"
                           width="150"
                         />
@@ -349,8 +349,11 @@
       <div class="h-20 w-full"></div>
     </body>
     <!-- <%- include("footer") %> -->
-    <script type="text/javascript" src="/static/js/blog.js"></script>
-    <script type="text/javascript" src="/static/js/hamburger-menu.js"></script>
+    <script type="text/javascript" src="../static/js/blog.js"></script>
+    <script
+      type="text/javascript"
+      src="../static/js/hamburger-menu.js"
+    ></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"

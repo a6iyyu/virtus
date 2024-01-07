@@ -10,9 +10,9 @@
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Terms & Privacy</title>
-      <link rel="icon" href="/static/img/icon.png" />
-      <link rel="stylesheet" href="/static/css/component.css" />
-      <link rel="stylesheet" href="/static/css/terms-and-privacy.css" />
+      <link rel="icon" href="../static/img/icon.png" />
+      <link rel="stylesheet" href="../static/css/component.css" />
+      <link rel="stylesheet" href="../static/css/terms-and-privacy.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
@@ -44,7 +44,7 @@
                 class="intro-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Introduction
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -60,7 +60,7 @@
                 class="personal-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Personal Information
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -69,7 +69,7 @@
                 class="purpose-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Purpose of Collection
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -78,7 +78,7 @@
                 class="cookie-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Cookie Policy
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -87,7 +87,7 @@
                 class="third-party-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Third-Party Data
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -96,7 +96,7 @@
                 class="data-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Data Security
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -105,7 +105,7 @@
                 class="access-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Access and Control
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -114,7 +114,7 @@
                 class="policy-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Policy Changes
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -130,7 +130,7 @@
                 class="applicable-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Applicable Law
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -139,7 +139,7 @@
                 class="company-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Company Contact
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -148,7 +148,7 @@
                 class="compliance-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Compliance with GDPR, CCPA, etc.
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -157,7 +157,7 @@
                 class="children-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Children's Policy
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -166,7 +166,7 @@
                 class="artwork-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Artwork Guarantee
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -175,7 +175,7 @@
                 class="use-list text-1xl text-gray-900 cursor-pointer font-light transition-all ease-in-out w-fit flex justify-start hover:text-gray-600 hover:underline"
                 >Use of Images and Reviews
                 <div class="h-full w-fit flex items-start">
-                  <img src="/static/img/link.png" alt="" width="12" />
+                  <img src="../static/img/link.png" alt="" width="12" />
                 </div>
               </a>
             </div>
@@ -360,7 +360,7 @@
             >
               These Terms of Use are subject to the
               <a
-                href="https://ppid.unud.ac.id//static/img/admin/page_attc/9d0d1cd9a94ba484f9e18bed334f2d10.pdf"
+                href="https://ppid.unud.ac.id/../static/img/admin/page_attc/9d0d1cd9a94ba484f9e18bed334f2d10.pdf"
                 class="underline transition-all ease-in-out hover:text-gray-600"
                 target="_blank"
                 >laws of UU No. 19 of 2002</a
@@ -482,10 +482,13 @@
       <div class="h-8 w-full"></div>
     </body>
     <!-- <%- include("footer") %> -->
-    <script type="text/javascript" src="/static/js/hamburger-menu.js"></script>
     <script
       type="text/javascript"
-      src="/static/js/terms-and-privacy.js"
+      src="../static/js/hamburger-menu.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../static/js/terms-and-privacy.js"
     ></script>
     <script
       type="text/javascript"

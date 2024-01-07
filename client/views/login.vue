@@ -7,9 +7,9 @@
       <meta name="description" content="" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Login</title>
-      <link rel="icon" href="/static/img/icon.png" />
-      <link rel="stylesheet" href="/static/css/component.css" />
-      <link rel="stylesheet" href="/static/css/login.css" />
+      <link rel="icon" href="../static/img/icon.png" />
+      <link rel="stylesheet" href="../static/css/component.css" />
+      <link rel="stylesheet" href="../static/css/login.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
@@ -21,7 +21,7 @@
           <div class="h-full w-9/10 flex">
             <div class="h-full w-2/5 flex items-end justify-center">
               <div class="h-4/5 w-full grid place-items-center">
-                <img src="/static/img/logo-black.png" alt="" />
+                <img src="../static/img/logo-black.png" alt="" />
               </div>
             </div>
             <div class="h-full w-3/5 flex items-end justify-start">
@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="h-full w-1/2 grid place-items-center">
-        <img src="/static/img/login.png" alt="" width="600" />
+        <img src="../static/img/login.png" alt="" width="600" />
       </div>
     </body>
   </html>

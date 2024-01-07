@@ -10,9 +10,9 @@
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Services</title>
-      <link rel="icon" href="/static/img/icon.png" />
-      <link rel="stylesheet" href="/static/css/component.css" />
-      <link rel="stylesheet" href="/static/css/services.css" />
+      <link rel="icon" href="../static/img/icon.png" />
+      <link rel="stylesheet" href="../static/css/component.css" />
+      <link rel="stylesheet" href="../static/css/services.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
@@ -125,7 +125,10 @@
       <div class="h-20 w-full"></div>
     </body>
     <!-- <%- include("footer") %> -->
-    <script type="text/javascript" src="/static/js/hamburger-menu.js"></script>
+    <script
+      type="text/javascript"
+      src="../static/js/hamburger-menu.js"
+    ></script>
     <script
       type="text/javascript"
       src="https://unpkg.com/aos@next/dist/aos.js"

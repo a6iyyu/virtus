@@ -10,9 +10,9 @@
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Explore</title>
-      <link rel="icon" href="/static/img/icon.png" />
-      <link rel="stylesheet" href="/static/css/component.css" />
-      <link rel="stylesheet" href="/static/css/explore.css" />
+      <link rel="icon" href="../static/img/icon.png" />
+      <link rel="stylesheet" href="../static/css/component.css" />
+      <link rel="stylesheet" href="../static/css/explore.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
@@ -22,19 +22,19 @@
             <div class="h-full w-1/4 grid place-items-center">
               <a href="/" class="logo">
                 <img
-                  src="/static/img/logo-white.png"
+                  src="../static/img/logo-white.png"
                   alt="Virtus Logo"
                   width="225"
                 />
               </a>
               <a href="/" class="icon">
-                <img src="/static/img/icon.png" alt="" width="100" />
+                <img src="../static/img/icon.png" alt="" width="100" />
               </a>
             </div>
             <div class="h-full w-3/4 flex-center-end">
               <div class="avatar h-full w-3/40 grid place-items-center">
                 <a href="/not-logged-in">
-                  <img src="/static/img/avatar.png" alt="" width="50" />
+                  <img src="../static/img/avatar.png" alt="" width="50" />
                 </a>
               </div>
               <div
@@ -88,6 +88,9 @@
         </div>
       </div>
     </body>
-    <script type="text/javascript" src="/static/js/hamburger-menu.js"></script>
+    <script
+      type="text/javascript"
+      src="../static/js/hamburger-menu.js"
+    ></script>
   </html>
 </template>

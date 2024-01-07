@@ -10,9 +10,9 @@
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Virtus | Create Your Masterpiece</title>
-      <link rel="icon" href="static/img/icon.png" />
-      <link rel="stylesheet" href="static/css/component.css" />
-      <link rel="stylesheet" href="static/css/homepage.css" />
+      <link rel="icon" href="../static/img/icon.png" />
+      <link rel="stylesheet" href="../static/css/component.css" />
+      <link rel="stylesheet" href="../static/css/homepage.css" />
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
@@ -54,7 +54,7 @@
             </div>
           </div>
           <div class="tagline-vector h-9/10 w-2/5 grid place-items-center">
-            <img src="static/img/artist.png" alt="" width="350" />
+            <img src="../static/img/artist.png" alt="" width="350" />
           </div>
         </div>
       </div>
@@ -215,7 +215,7 @@
           </div>
           <div class="community-image h-full w-2/5 flex-center-end">
             <img
-              src="static/img/chat.png"
+              src="../static/img/chat.png"
               alt="Community Chat"
               class="text-white"
               height="300"
@@ -228,7 +228,7 @@
       <div class="h-12 w-full grid place-items-center">
         <div class="top-trending-parent h-full w-9/10 flex items-center">
           <img
-            src="static/img/star.png"
+            src="../static/img/star.png"
             alt=""
             height="40"
             width="40"
@@ -265,7 +265,7 @@
       <div class="top-artist-parent h-12 w-full grid place-items-center">
         <div class="h-full w-9/10 flex items-center">
           <img
-            src="static/img/artist-icon.png"
+            src="../static/img/artist-icon.png"
             alt=""
             height="40"
             width="40"
@@ -302,7 +302,7 @@
       <div class="best-doujins-parent h-12 w-full grid place-items-center">
         <div class="h-full w-9/10 flex items-center">
           <img
-            src="static/img/comic.png"
+            src="../static/img/comic.png"
             alt=""
             height="40"
             width="40"
@@ -337,7 +337,7 @@
       <div class="livestreaming-parent h-12 w-full grid place-items-center">
         <div class="h-full w-9/10 flex items-center">
           <img
-            src="static/img/livestreaming.png"
+            src="../static/img/livestreaming.png"
             alt=""
             height="40"
             width="40"
@@ -372,8 +372,11 @@
       </div>
     </body>
     <!-- <%- include("footer") %> -->
-    <script type="text/javascript" src="static/js/hamburger-menu.js"></script>
-    <script type="text/javascript" src="static/js/homepage.js"></script>
+    <script
+      type="text/javascript"
+      src="../static/js/hamburger-menu.js"
+    ></script>
+    <script type="text/javascript" src="../static/js/homepage.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"

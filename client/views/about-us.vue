@@ -10,9 +10,9 @@
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>About Us</title>
-      <link rel="icon" href="/static/img/icon.png" />
-      <link rel="stylesheet" href="/static/css/component.css" />
-      <link rel="stylesheet" href="/static/css/about.css" />
+      <link rel="icon" href="../static/img/icon.png" />
+      <link rel="stylesheet" href="../static/css/component.css" />
+      <link rel="stylesheet" href="../static/css/about.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
@@ -43,7 +43,7 @@
           </div>
           <div class="welcome-vector w-2/5 flex-center-end" data-aos="fade-up">
             <img
-              src="/static/img/drawing.jpg"
+              src="../static/img/drawing.jpg"
               alt=""
               width="375"
               style="border-radius: 50px"
@@ -55,7 +55,7 @@
       <div class="founder-image h-64 w-full grid place-items-center">
         <img
           data-aos="fade-up"
-          src="/static/img/founder.jpg"
+          src="../static/img/founder.jpg"
           alt="Founder"
           width="250"
           style="border-radius: 250px; box-shadow: 1rem 1rem 1.25rem #bebebe"
@@ -123,7 +123,7 @@
             <div class="h-full w-4/5 block">
               <div class="h-1/2 w-full flex items-end justify-center">
                 <img
-                  src="/static/img/exclusive.png"
+                  src="../static/img/exclusive.png"
                   alt="Exclusive"
                   width="90"
                 />
@@ -145,7 +145,7 @@
           >
             <div class="h-full w-4/5 block">
               <div class="h-1/2 w-full flex items-end justify-center">
-                <img src="/static/img/experience.png" alt="" width="90" />
+                <img src="../static/img/experience.png" alt="" width="90" />
               </div>
               <div class="h-1/2 w-full grid place-items-center">
                 <p
@@ -164,7 +164,7 @@
           >
             <div class="h-full w-4/5 block">
               <div class="h-1/2 w-full flex items-end justify-center">
-                <img src="/static/img/business.png" alt="" width="90" />
+                <img src="../static/img/business.png" alt="" width="90" />
               </div>
               <div class="h-1/2 w-full grid place-items-center">
                 <p
@@ -183,7 +183,7 @@
           >
             <div class="h-full w-4/5 block">
               <div class="h-1/2 w-full flex items-end justify-center">
-                <img src="/static/img/technology.png" alt="" width="100" />
+                <img src="../static/img/technology.png" alt="" width="100" />
               </div>
               <div class="h-1/2 w-full grid place-items-center">
                 <p
@@ -203,7 +203,7 @@
             <div class="h-full w-4/5 block">
               <div class="h-1/2 w-full flex items-end justify-center">
                 <img
-                  src="/static/img/quality-guarantee.png"
+                  src="../static/img/quality-guarantee.png"
                   alt=""
                   width="90"
                 />
@@ -225,7 +225,7 @@
           >
             <div class="h-full w-4/5 block">
               <div class="h-1/2 w-full flex items-end justify-center">
-                <img src="/static/img/community.png" alt="" width="90" />
+                <img src="../static/img/community.png" alt="" width="90" />
               </div>
               <div class="h-1/2 w-full grid place-items-center">
                 <p
@@ -252,7 +252,7 @@
         >
           <div class="h-full w-2/5 grid place-items-center">
             <img
-              src="/static/img/commitment.png"
+              src="../static/img/commitment.png"
               alt="Commitment to Quality of Art"
               width="250"
             />
@@ -330,7 +330,10 @@
       </div>
     </body>
     <!-- <%- include("footer") %> -->
-    <script type="text/javascript" src="/static/js/hamburger-menu.js"></script>
+    <script
+      type="text/javascript"
+      src="../static/js/hamburger-menu.js"
+    ></script>
     <script
       type="text/javascript"
       src="https://unpkg.com/aos@next/dist/aos.js"
