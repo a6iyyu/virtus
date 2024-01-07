@@ -12,6 +12,10 @@
     <link rel="icon" href="/static/img/icon.png" />
     <link rel="stylesheet" href="/static/css/component.css" />
     <link rel="stylesheet" href="/static/css/explore.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -59,7 +63,7 @@
         <div class="h-full w-9/10 block">
           <div class="h-2/5 w-full flex items-end justify-center">
             <p class="text-white text-center cursor-default font-bold text-5xl">
-              Resources for creative <br />
+              Resources for creative <br class="br1" />
               minds to grow and develop
             </p>
           </div>
@@ -77,13 +81,116 @@
               name=""
               id=""
               placeholder="Discover the miracle..."
-              class="outline-none rounded-full h-1/4 w-3/4"
-              style="padding: 0 1.5rem"
+              class="search-box outline-none rounded-full"
             />
           </div>
         </div>
       </div>
     </div>
+    <div class="h-12 w-full"></div>
+    <div class="filter-search h-20 w-full grid place-items-center">
+      <div class="h-full w-9/10 flex">
+        <div class="h-full w-1/5 grid place-items-center">
+          <div
+            class="h-full w-full bg-gray-950 rounded-full cursor-pointer flex hover:bg-gray-900"
+          >
+            <div class="h-full w-1/2 grid place-items-center">
+              <img src="/static/img/filter.png" alt="" width="30" />
+            </div>
+            <div class="h-full w-1/2 flex items-center justify-start">
+              <p class="text-white text-center font-semibold">Filter</p>
+            </div>
+          </div>
+        </div>
+        <div class="filtered-menu h-full w-4/5 grid place-items-center">
+          <div class="splide splide__1 h-full w-9/10">
+            <div class="splide__track h-full">
+              <div class="splide__list splide__list__1">
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box bg-gray-800 text-white grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="transition: all 0.2s ease-in-out"
+                  >
+                    <p class="font-bold">For You</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box bg-gray-800 text-white grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="transition: all 0.2s ease-in-out"
+                  >
+                    <p class="font-bold">3D</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box bg-gray-800 text-white grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="transition: all 0.2s ease-in-out"
+                  >
+                    <p class="font-bold">AI</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box bg-gray-800 text-white grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="transition: all 0.2s ease-in-out"
+                  >
+                    <p class="font-bold">Abstract</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box bg-gray-800 text-white grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="transition: all 0.2s ease-in-out"
+                  >
+                    <p class="font-bold">Animation</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box bg-gray-800 text-white grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="transition: all 0.2s ease-in-out"
+                  >
+                    <p class="font-bold">Character</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box bg-gray-800 text-white grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="transition: all 0.2s ease-in-out"
+                  >
+                    <p class="font-bold">Motion Graphics</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box bg-gray-800 text-white grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="transition: all 0.2s ease-in-out"
+                  >
+                    <p class="font-bold">Photography</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box bg-gray-800 text-white grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="transition: all 0.2s ease-in-out"
+                  >
+                    <p class="font-bold">Vector</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h-12 w-full"></div>
   </body>
+  <%- include("footer") %>
+  <script type="text/javascript" src="/static/js/explore.js"></script>
   <script type="text/javascript" src="/static/js/hamburger-menu.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+  ></script>
 </html>

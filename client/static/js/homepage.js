@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const findMore = document.querySelector(".find-more");
 const finishToScroll = document.querySelector(".finish-to-scroll");
 const preloader = document.querySelector(".preloader");

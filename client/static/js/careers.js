@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 document.addEventListener("DOMContentLoaded", function () {
   new Splide(".splide__1", {
     drag: "free",
