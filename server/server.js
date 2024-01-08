@@ -14,7 +14,7 @@ app.set("views", [path.join(".", "server", "layouts"), path.join(".", "server", 
 app.engine("html", ejs.renderFile);
 app.use(logger("dev"));
 app.use(cors());
-app.use(express.static(path.join(".", "client")));
+app.use(express.static(path.join("")));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(auth, db, googlestrategy);

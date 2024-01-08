@@ -1,3 +1,8 @@
+<script setup>
+import headerVue from "../src/header.vue";
+import footerVue from "../src/footer.vue";
+</script>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -16,9 +21,9 @@
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-      <!-- <%- include("header") %> -->
+      <headerVue />
     </body>
-    <!-- <%- include("footer") %> -->
+    <footerVue />
     <script
       type="text/javascript"
       src="../static/js/hamburger-menu.js"

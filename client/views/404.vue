@@ -1,3 +1,8 @@
+<script setup>
+import headerVue from "../src/header.vue";
+import footerVue from "../src/footer.vue";
+</script>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -10,6 +15,13 @@
       <link rel="stylesheet" href="../static/css/component.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body></body>
+    <body>
+      <router-view>
+        <headerVue />
+      </router-view>
+    </body>
+    <router-view>
+      <footerVue />
+    </router-view>
   </html>
 </template>

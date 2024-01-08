@@ -1,3 +1,8 @@
+<script setup>
+import headerVue from "../src/header.vue";
+import footerVue from "../src/footer.vue";
+</script>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -17,7 +22,9 @@
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-      <!-- <%- include("header") %> -->
+      <router-view>
+        <headerVue />
+      </router-view>
       <div class="welcome w-full grid place-items-center">
         <div class="w-19/20 h-full flex-center-center" data-aos="fade-up">
           <div class="w-1/2 flex-center-end">
@@ -329,7 +336,9 @@
         </div>
       </div>
     </body>
-    <!-- <%- include("footer") %> -->
+    <router-view>
+      <footerVue />
+    </router-view>
     <script
       type="text/javascript"
       src="../static/js/hamburger-menu.js"

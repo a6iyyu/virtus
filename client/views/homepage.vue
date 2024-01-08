@@ -1,3 +1,11 @@
+<script setup>
+import headerVue from "../src/header.vue";
+import homepageSliderVue from "../src/homepage-slider.vue";
+import homepageSlider2 from "../src/homepage-slider-2.vue";
+import homepageSlider3 from "../src/homepage-slider-3.vue";
+import footerVue from "../src/footer.vue";
+</script>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -29,7 +37,9 @@
       >
         <div class="loader absolute grid place-items-center"></div>
       </div>
-      <!-- <%- include("header") %> -->
+      <router-view>
+        <headerVue />
+      </router-view>
       <div class="tagline w-full grid place-items-center">
         <div class="w-19/20 h-full flex">
           <div class="tagline-parent h-9/10 w-3/5 flex-center-center">
@@ -251,12 +261,9 @@
         <div class="splide splide__2 h-full w-19/20">
           <div class="splide__track h-full py-4">
             <div class="splide__list">
-              <!-- <%- include("homepage-slider") %> <%- include("homepage-slider")
-              %> <%- include("homepage-slider") %> <%-
-              include("homepage-slider") %> <%- include("homepage-slider") %>
-              <%- include("homepage-slider") %> <%- include("homepage-slider")
-              %> <%- include("homepage-slider") %> <%-
-              include("homepage-slider") %> -->
+              <router-view>
+                <homepageSliderVue />
+              </router-view>
             </div>
           </div>
         </div>
@@ -288,12 +295,9 @@
         <div class="splide splide__3 h-full w-19/20">
           <div class="splide__track h-full py-4">
             <div class="splide__list">
-              <!-- <%- include("homepage-slider") %> <%- include("homepage-slider")
-              %> <%- include("homepage-slider") %> <%-
-              include("homepage-slider") %> <%- include("homepage-slider") %>
-              <%- include("homepage-slider") %> <%- include("homepage-slider")
-              %> <%- include("homepage-slider") %> <%-
-              include("homepage-slider") %> -->
+              <router-view>
+                <homepageSliderVue />
+              </router-view>
             </div>
           </div>
         </div>
@@ -322,13 +326,9 @@
         <div class="splide splide__4 h-full w-19/20 grid place-items-center">
           <div class="splide__track h-full w-full">
             <div class="splide__list h-full w-full">
-              <!-- <%- include("homepage-slider-2") %> <%-
-              include("homepage-slider-2") %> <%- include("homepage-slider-2")
-              %> <%- include("homepage-slider-2") %> <%-
-              include("homepage-slider-2") %> <%- include("homepage-slider-2")
-              %> <%- include("homepage-slider-2") %> <%-
-              include("homepage-slider-2") %> <%- include("homepage-slider-2")
-              %> -->
+              <router-view>
+                <homepageSlider2 />
+              </router-view>
             </div>
           </div>
         </div>
@@ -359,19 +359,17 @@
         <div class="splide splide__5 h-95-p w-full grid place-items-center">
           <div class="splide__track h-full w-full grid place-items-center">
             <ul class="splide__list h-full w-full">
-              <!-- <%- include("homepage-slider-3") %> <%-
-              include("homepage-slider-3") %> <%- include("homepage-slider-3")
-              %> <%- include("homepage-slider-3") %> <%-
-              include("homepage-slider-3") %> <%- include("homepage-slider-3")
-              %> <%- include("homepage-slider-3") %> <%-
-              include("homepage-slider-3") %> <%- include("homepage-slider-3")
-              %> <%- include("homepage-slider-3") %> -->
+              <router-view>
+                <homepageSlider3 />
+              </router-view>
             </ul>
           </div>
         </div>
       </div>
     </body>
-    <!-- <%- include("footer") %> -->
+    <router-view>
+      <footerVue />
+    </router-view>
     <script
       type="text/javascript"
       src="../static/js/hamburger-menu.js"

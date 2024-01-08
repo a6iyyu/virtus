@@ -1,3 +1,9 @@
+<script setup>
+import headerVue from "../src/header.vue";
+import blogSliderVue from "../src/blog-slider.vue";
+import footerVue from "../src/footer.vue";
+</script>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -20,7 +26,9 @@
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-      <!-- <%- include("header") %> -->
+      <router-view>
+        <headerVue />
+      </router-view>
       <div class="h-12 w-full"></div>
       <div class="h-fit w-full grid place-items-center">
         <p class="text-gray-900 text-center text-5xl cursor-default font-bold">
@@ -44,11 +52,9 @@
         <div class="splide splide__1 h-full w-9/10">
           <div class="splide__track h-full py-6">
             <div class="splide__list">
-              <!-- <%- include("blog-slider") %> <%- include("blog-slider") %> <%-
-              include("blog-slider") %> <%- include("blog-slider") %> <%-
-              include("blog-slider") %> <%- include("blog-slider") %> <%-
-              include("blog-slider") %> <%- include("blog-slider") %> <%-
-              include("blog-slider") %> <%- include("blog-slider") %> -->
+              <router-view>
+                <blogSliderVue />
+              </router-view>
             </div>
           </div>
         </div>
@@ -112,7 +118,9 @@
       </div>
       <div class="h-16 w-full"></div>
     </body>
-    <!-- <%- include("footer") %> -->
+    <router-view>
+      <footerVue />
+    </router-view>
     <script type="text/javascript" src="../static/js/blog.js"></script>
     <script
       type="text/javascript"
