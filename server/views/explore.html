@@ -93,6 +93,7 @@
         <div class="h-full w-1/5 grid place-items-center">
           <div
             class="h-full w-full bg-gray-950 rounded-full cursor-pointer flex hover:bg-gray-900"
+            style="transition: all 0.2s ease-in-out"
           >
             <div class="h-full w-1/2 grid place-items-center">
               <img src="/client/static/img/filter.png" alt="" width="30" />
@@ -102,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class="filtered-menu h-full w-4/5 grid place-items-center">
+        <div class="h-full w-4/5 grid place-items-center">
           <div class="splide splide__1 h-full w-9/10">
             <div class="splide__track h-full">
               <div class="splide__list splide__list__1">
@@ -188,7 +189,10 @@
   </body>
   <%- include("footer") %>
   <script type="text/javascript" src="/client/static/js/explore.js"></script>
-  <script type="text/javascript" src="/client/static/js/hamburger-menu.js"></script>
+  <script
+    type="text/javascript"
+    src="/client/static/js/hamburger-menu.js"
+  ></script>
   <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
