@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const splide__4 = new Splide(".splide__4", {
     arrows: false,
+    autoplay: true,
     direction: "ttb",
     height: "10rem",
     type: "loop",

@@ -53,58 +53,93 @@
       </div>
     </div>
     <div class="h-16 w-full"></div>
-    <div class="filtered-menu grid place-items-center h-20 w-full">
-      <div class="splide splide__2 h-full w-9/10">
-        <div class="splide__track h-full">
-          <div class="splide__list splide__list__2">
-            <a class="splide__slide grid place-items-center" href="">
-              <div
-                class="filtered-box grid place-items-center h-full w-19/20 overflow-hidden rounded-50px"
-                style="background-color: #ded0b6"
-              >
-                <p class="font-bold">All</p>
+    <div class="filter-search h-20 w-full grid place-items-center">
+      <div class="h-full w-9/10 flex">
+        <div class="h-full w-1/5 grid place-items-center">
+          <div
+            class="h-full w-full bg-gray-950 rounded-full cursor-pointer flex hover:bg-gray-900"
+            style="transition: all 0.2s ease-in-out"
+          >
+            <div class="h-full w-1/2 grid place-items-center">
+              <img src="/client/static/img/filter.png" alt="" width="30" />
+            </div>
+            <div class="h-full w-1/2 flex items-center justify-start">
+              <p class="text-white text-center font-semibold">Filter</p>
+            </div>
+          </div>
+        </div>
+        <div class="filtered-menu h-full w-4/5 grid place-items-center">
+          <div class="splide splide__2 h-full w-9/10">
+            <div class="splide__track h-full">
+              <div class="splide__list splide__list__2">
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box text-gray-950 grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="
+                      background-color: #ded0b6;
+                      transition: all 0.2s ease-in-out;
+                    "
+                  >
+                    <p class="font-bold">All</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box text-gray-950 grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="
+                      background-color: #ded0b6;
+                      transition: all 0.2s ease-in-out;
+                    "
+                  >
+                    <p class="font-bold">Artist</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box text-gray-950 grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="
+                      background-color: #ded0b6;
+                      transition: all 0.2s ease-in-out;
+                    "
+                  >
+                    <p class="font-bold">Company</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box text-gray-950 grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="
+                      background-color: #ded0b6;
+                      transition: all 0.2s ease-in-out;
+                    "
+                  >
+                    <p class="font-bold">Event</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box text-gray-950 grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="
+                      background-color: #ded0b6;
+                      transition: all 0.2s ease-in-out;
+                    "
+                  >
+                    <p class="font-bold">Knowledge</p>
+                  </div>
+                </div>
+                <div class="splide__slide grid place-items-center">
+                  <div
+                    class="filtered-box text-gray-950 grid place-items-center h-full w-19/20 cursor-pointer overflow-hidden hover:bg-gray-700 rounded-50px"
+                    style="
+                      background-color: #ded0b6;
+                      transition: all 0.2s ease-in-out;
+                    "
+                  >
+                    <p class="font-bold">Recent</p>
+                  </div>
+                </div>
               </div>
-            </a>
-            <a class="splide__slide grid place-items-center" href="">
-              <div
-                class="filtered-box grid place-items-center h-full w-19/20 overflow-hidden rounded-50px"
-                style="background-color: #ded0b6"
-              >
-                <p class="font-bold">Artist</p>
-              </div>
-            </a>
-            <a class="splide__slide grid place-items-center" href="">
-              <div
-                class="filtered-box grid place-items-center h-full w-19/20 overflow-hidden rounded-50px"
-                style="background-color: #ded0b6"
-              >
-                <p class="font-bold">Company</p>
-              </div>
-            </a>
-            <a class="splide__slide grid place-items-center" href="">
-              <div
-                class="filtered-box grid place-items-center h-full w-19/20 overflow-hidden rounded-50px"
-                style="background-color: #ded0b6"
-              >
-                <p class="font-bold">Event</p>
-              </div>
-            </a>
-            <a class="splide__slide grid place-items-center" href="">
-              <div
-                class="filtered-box grid place-items-center h-full w-19/20 overflow-hidden rounded-50px"
-                style="background-color: #ded0b6"
-              >
-                <p class="font-bold">Knowledge</p>
-              </div>
-            </a>
-            <a class="splide__slide grid place-items-center" href="">
-              <div
-                class="filtered-box grid place-items-center h-full w-19/20 overflow-hidden rounded-50px"
-                style="background-color: #ded0b6"
-              >
-                <p class="font-bold">Recent</p>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -113,7 +148,10 @@
   </body>
   <%- include("footer") %>
   <script type="text/javascript" src="/client/static/js/blog.js"></script>
-  <script type="text/javascript" src="/client/static/js/hamburger-menu.js"></script>
+  <script
+    type="text/javascript"
+    src="/client/static/js/hamburger-menu.js"
+  ></script>
   <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
