@@ -1,3 +1,13 @@
+<script setup>
+import headerVue from "@/components/header.vue";
+import footerVue from "@/components/footer.vue";
+</script>
+
+<style scoped>
+@import "../static/css/component.css";
+@import "../static/css/saved.css";
+</style>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -6,19 +16,21 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta
         name="description"
-        content="Experience visual exclusivity with Limited Editions at Virtus - a collection of premium contents that bring out the beauty of art with a special touch."
+        content="Get exclusive updates on your saved artworks, ensuring you don't miss out on the latest from your favorite artists."
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Limited Editions</title>
+      <title>Saved</title>
       <link rel="icon" href="../static/img/icon.png" />
-      <link rel="stylesheet" href="../static/css/component.css" />
-      <link rel="stylesheet" href="../static/css/limited-editions.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-      <!-- <%- include("header") %> -->
+      <router-view>
+        <headerVue />
+      </router-view>
     </body>
-    <!-- <%- include("footer") %> -->
+    <router-view>
+      <footerVue />
+    </router-view>
     <script
       type="text/javascript"
       src="../static/js/hamburger-menu.js"

@@ -1,8 +1,13 @@
 <script setup>
-import headerVue from "../src/header.vue";
-import blogSliderVue from "../src/blog-slider.vue";
-import footerVue from "../src/footer.vue";
+import headerVue from "@/components/header.vue";
+import blogSliderVue from "@/components/blog-slider.vue";
+import footerVue from "@/components/footer.vue";
 </script>
+
+<style scoped>
+@import "../static/css/component.css";
+@import "../static/css/blog.css";
+</style>
 
 <template>
   <!DOCTYPE html>
@@ -17,8 +22,6 @@ import footerVue from "../src/footer.vue";
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Blog</title>
       <link rel="icon" href="../static/img/icon.png" />
-      <link rel="stylesheet" href="../static/css/component.css" />
-      <link rel="stylesheet" href="../static/css/blog.css" />
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"

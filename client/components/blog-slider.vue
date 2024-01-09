@@ -1,5 +1,5 @@
 <template>
-  <router-view class="splide__slide grid place-items-center" href="">
+  <router-link to="" class="splide__slide grid place-items-center">
     <div
       class="bg-bbab8c grid place-items-center h-full w-19/20 overflow-hidden rounded-50px"
       style="box-shadow: 0.75rem 0.75rem 1.25rem #bebebe"
@@ -23,5 +23,5 @@
         </div>
       </div>
     </div>
-  </router-view>
+  </router-link>
 </template>

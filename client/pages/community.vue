@@ -1,7 +1,12 @@
 <script setup>
-import headerVue from "../src/header.vue";
-import footerVue from "../src/footer.vue";
+import headerVue from "@/components/header.vue";
+import footerVue from "@/components/footer.vue";
 </script>
+
+<style scoped>
+@import "../static/css/component.css";
+@import "../static/css/community.css";
+</style>
 
 <template>
   <!DOCTYPE html>
@@ -11,19 +16,21 @@ import footerVue from "../src/footer.vue";
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta
         name="description"
-        content="Watch growth and engagement with your work with informative data visualizations on the Virtus Analytics page."
+        content="Virtus Community Hub - Empowering artists, cultivating connections, and celebrating the diversity of creative expression."
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Analytics</title>
+      <title>Community</title>
       <link rel="icon" href="../static/img/icon.png" />
-      <link rel="stylesheet" href="../static/css/component.css" />
-      <link rel="stylesheet" href="../static/css/analytics.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-      <headerVue />
+      <router-view>
+        <headerVue />
+      </router-view>
     </body>
-    <footerVue />
+    <router-view>
+      <footerVue />
+    </router-view>
     <script
       type="text/javascript"
       src="../static/js/hamburger-menu.js"

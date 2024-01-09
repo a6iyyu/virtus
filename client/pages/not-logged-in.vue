@@ -1,3 +1,13 @@
+<script setup>
+import headerVue from "@/components/header.vue";
+import footerVue from "@/components/footer.vue";
+</script>
+
+<style scoped>
+@import "../static/css/component.css";
+@import "../static/css/not-logged-in.css";
+</style>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -11,13 +21,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Oops!</title>
       <link rel="icon" href="../static/img/icon.png" />
-      <link rel="stylesheet" href="../static/css/component.css" />
-      <link rel="stylesheet" href="../static/css/not-logged-in.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-      <!-- <%- include("header") %> -->
+      <router-view>
+        <headerVue />
+      </router-view>
       <div class="oops w-full grid place-items-center">
         <div class="h-full flex">
           <div class="h-full w-5/12 grid place-items-center">
@@ -63,7 +73,9 @@
       </div>
       <div class="h-12 w-full"></div>
     </body>
-    <!-- <%- include("footer") %> -->
+    <router-view>
+      <footerVue />
+    </router-view>
     <script
       type="text/javascript"
       src="../static/js/hamburger-menu.js"

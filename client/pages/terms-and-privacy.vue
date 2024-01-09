@@ -1,3 +1,13 @@
+<script setup>
+import headerVue from "@/components/header.vue";
+import footerVue from "@/components/footer.vue";
+</script>
+
+<style scoped>
+@import "../static/css/component.css";
+@import "../static/css/terms-and-privacy.css";
+</style>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -11,13 +21,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Terms & Privacy</title>
       <link rel="icon" href="../static/img/icon.png" />
-      <link rel="stylesheet" href="../static/css/component.css" />
-      <link rel="stylesheet" href="../static/css/terms-and-privacy.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-      <!-- <%- include("header") %> -->
+      <router-view>
+        <headerVue />
+      </router-view>
       <div class="h-48 w-full grid place-items-center">
         <p
           class="text-1xl cursor-default text-gray-900 dark:text-white text-center"
@@ -481,7 +491,9 @@
       </div>
       <div class="h-8 w-full"></div>
     </body>
-    <!-- <%- include("footer") %> -->
+    <router-view>
+      <footerVue />
+    </router-view>
     <script
       type="text/javascript"
       src="../static/js/hamburger-menu.js"

@@ -1,3 +1,12 @@
+<script setup>
+import footerVue from "@/components/footer.vue";
+</script>
+
+<style scoped>
+@import "../static/css/component.css";
+@import "../static/css/explore.css";
+</style>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -11,8 +20,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Explore</title>
       <link rel="icon" href="../static/img/icon.png" />
-      <link rel="stylesheet" href="../static/css/component.css" />
-      <link rel="stylesheet" href="../static/css/explore.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
@@ -88,6 +95,9 @@
         </div>
       </div>
     </body>
+    <router-view>
+      <footerVue />
+    </router-view>
     <script
       type="text/javascript"
       src="../static/js/hamburger-menu.js"

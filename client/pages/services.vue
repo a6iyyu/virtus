@@ -1,3 +1,13 @@
+<script setup>
+import headerVue from "@/components/header.vue";
+import footerVue from "@/components/footer.vue";
+</script>
+
+<style scoped>
+@import "../static/css/component.css";
+@import "../static/css/services.css";
+</style>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -11,13 +21,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Services</title>
       <link rel="icon" href="../static/img/icon.png" />
-      <link rel="stylesheet" href="../static/css/component.css" />
-      <link rel="stylesheet" href="../static/css/services.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-      <!-- <%- include("header") %> -->
+      <router-view>
+        <headerVue />
+      </router-view>
       <div
         class="h-16 w-full"
         style="background-image: linear-gradient(to left, #faeed1, #dac69a)"
@@ -124,7 +134,9 @@
       ></div>
       <div class="h-20 w-full"></div>
     </body>
-    <!-- <%- include("footer") %> -->
+    <router-view>
+      <footerVue />
+    </router-view>
     <script
       type="text/javascript"
       src="../static/js/hamburger-menu.js"

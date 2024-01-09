@@ -1,3 +1,13 @@
+<script setup>
+import headerVue from "@/components/header.vue";
+import footerVue from "@/components/footer.vue";
+</script>
+
+<style scoped>
+@import "../static/css/component.css";
+@import "../static/css/careers.css";
+</style>
+
 <template>
   <!DOCTYPE html>
   <html lang="en">
@@ -11,8 +21,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Careers</title>
       <link rel="icon" href="../static/img/icon.png" />
-      <link rel="stylesheet" href="../static/css/component.css" />
-      <link rel="stylesheet" href="../static/css/careers.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link
         rel="stylesheet"
@@ -21,7 +29,9 @@
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-      <!-- <%- include("header") %> -->
+      <router-view>
+        <headerVue />
+      </router-view>
       <div
         class="h-20 w-full"
         style="background-image: linear-gradient(to left, #faeed1, #dac69a)"
@@ -348,7 +358,9 @@
       </div>
       <div class="h-20 w-full"></div>
     </body>
-    <!-- <%- include("footer") %> -->
+    <router-view>
+        <footerVue />
+      </router-view>
     <script type="text/javascript" src="../static/js/blog.js"></script>
     <script
       type="text/javascript"

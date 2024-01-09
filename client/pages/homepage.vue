@@ -1,10 +1,15 @@
 <script setup>
-import headerVue from "../src/header.vue";
-import homepageSliderVue from "../src/homepage-slider.vue";
-import homepageSlider2 from "../src/homepage-slider-2.vue";
-import homepageSlider3 from "../src/homepage-slider-3.vue";
-import footerVue from "../src/footer.vue";
+import headerVue from "@/components/header.vue";
+import homepageSliderVue from "@/components/homepage-slider.vue";
+import homepageSlider2 from "@/components/homepage-slider-2.vue";
+import homepageSlider3 from "@/components/homepage-slider-3.vue";
+import footerVue from "@/components/footer.vue";
 </script>
+
+<style scoped>
+@import "../static/css/component.css";
+@import "../static/css/homepage.css";
+</style>
 
 <template>
   <!DOCTYPE html>
@@ -19,8 +24,6 @@ import footerVue from "../src/footer.vue";
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Virtus | Create Your Masterpiece</title>
       <link rel="icon" href="../static/img/icon.png" />
-      <link rel="stylesheet" href="../static/css/component.css" />
-      <link rel="stylesheet" href="../static/css/homepage.css" />
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"

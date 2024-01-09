@@ -1,7 +1,12 @@
 <script setup>
-import headerVue from "../src/header.vue";
-import footerVue from "../src/footer.vue";
+import headerVue from "@/components/header.vue";
+import footerVue from "@/components/footer.vue";
 </script>
+
+<style scoped>
+@import "../static/css/component.css";
+@import "../static/css/about.css";
+</style>
 
 <template>
   <!DOCTYPE html>
@@ -16,8 +21,6 @@ import footerVue from "../src/footer.vue";
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>About Us</title>
       <link rel="icon" href="../static/img/icon.png" />
-      <link rel="stylesheet" href="../static/css/component.css" />
-      <link rel="stylesheet" href="../static/css/about.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <script src="https://cdn.tailwindcss.com"></script>
     </head>
